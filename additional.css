@@ -203,8 +203,9 @@ div.scinner {
     
     }
 div.doclinks/* */ {
-    position: absolute; 
-    right: 1.5em; /* Fix IE5.5 (so that doclinks line up correctly) */
+	float:right;
+	position: absolute;
+	right: 14px; /* Fix IE5.5 (so that doclinks line up correctly) */
 /*    top: 0em;
     width: 9em;   */
     }
