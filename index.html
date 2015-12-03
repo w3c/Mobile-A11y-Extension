@@ -80,7 +80,7 @@
     </section>
     
     <section id='sotd'>
-      <p><strong>This document is the internal working draft used by the <acronym title="User Agent Working Group">Mobile Accessibility Task Force</acronym> and is updated continuously and without notice. This document has no formal standing within W3C. Please consult the <a href="http://www.w3.org/WAI/GL/mobile-a11y-tf/">group's home page</a> and the <a href="http://www.w3.org/TR/">W3C technical reports index</a> for information about the latest publications by this group.This is a draft document and may be updated, replaced or   obsoleted by other documents at any time. It is inappropriate to cite   this document as other than work in progress.</strong>
+      <p><strong>This document is the internal working draft used by the <acronym title="User Agent Working Group">Mobile Accessibility Task Force</acronym> and is updated continuously and without notice. This is a draft document and may be updated, replaced or   obsoleted by other documents at any time. It is inappropriate to cite   this document as other than work in progress.</strong>
       </p>
       <p>This is an early draft of a document that will become a First Public Working Draft (FPWD) of the WCAG Extension on Mobile Accessibility. This document catalogs Mobile A11y Task Force proposed new mobile guidelines, success criteria and techniques. </p>
       <p>This document is intended to become a normative extension of <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guideline (WCAG 2.0)</a> and is part of a series of technical and educational documents published by the <a href="http://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a>. </p>
@@ -228,6 +228,10 @@
     </ul>
     <h4>2.5.2  No Swipe Trap: When touch input   behavior is modified by built-in assistive technology so that touch   focus can be moved to a component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) [MOBILE]</h4>
     <h4>2.5.3  Single Taps and Long Presses   Revocable: Interface elements that require a single tap or a long press   as input will only trigger the corresponding event when the finger is   lifted inside that element. (Level A) [MOBILE]</h4>
+    <ul>
+      <li>[MOBILE] Touch events are only triggered when touch is removed from a control</li>
+      <li>[MOBILE] Failure of SC 2.5.3 due to activating a button on initial touch location rather than the final touch location</li>
+    </ul>
     <h4>2.5.4 Touch Target Size: One dimension of   any touch targt measures at least 9 mm except when the user has reduced   the default scale of content. (Level AA) [MOBILE]</h4>
     <ul>
       <li><strong>[MOBILE] Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
