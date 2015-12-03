@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mobile Accessibility WCAG Extension</title>
+    <title>DRAFT: Mobile Accessibility WCAG Extension</title>
     <meta charset='utf-8'>
     <link rel="stylesheet" type="text/css" href="additional.css"/>
     <script src='https://www.w3.org/Tools/respec/respec-w3c-common'
@@ -76,14 +76,14 @@
   <body>
     <section id='abstract'>
       <p>
-        The Mobile Accessibility Extension to WCAG 2.0 provides new guidelines, success criteria, and mobile Techniques that are an addition to Web Content Accessibility Guidelines (WCAG) 2.0. This extension does not replace WCAG 2.0. Where there are mobile Techniques that apply to WCAG, </p>
+        The Mobile Accessibility Extension to WCAG 2.0 provides new guidelines, success criteria, and mobile Techniques that are an addition to Web Content Accessibility Guidelines (WCAG) 2.0. This extension does not replace WCAG 2.0. </p>
     </section>
     
     <section id='sotd'>
-      <p>
-        This is an early draft of a document that will become a First Public Working Draft (FPWD) of the WCAG Extension on Mobile Accessibility. 
+      <p><strong>This document is the internal working draft used by the <acronym title="User Agent Working Group">Mobile Accessibility Task Force</acronym> and is updated continuously and without notice. This document has no formal standing within W3C. Please consult the <a href="http://www.w3.org/WAI/GL/mobile-a11y-tf/">group's home page</a> and the <a href="http://www.w3.org/TR/">W3C technical reports index</a> for information about the latest publications by this group.This is a draft document and may be updated, replaced or   obsoleted by other documents at any time. It is inappropriate to cite   this document as other than work in progress.</strong>
       </p>
-      <p>This document is intended to become a normative extension of <a href="http://www.w3.org/TR/WCAG20/">WCAG 2.0</a> and is part of a series of technical and educational documents published by the <a href="http://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a>. </p>
+      <p>This is an early draft of a document that will become a First Public Working Draft (FPWD) of the WCAG Extension on Mobile Accessibility. This document catalogs Mobile A11y Task Force proposed new mobile guidelines, success criteria and techniques. </p>
+      <p>This document is intended to become a normative extension of <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guideline (WCAG 2.0)</a> and is part of a series of technical and educational documents published by the <a href="http://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a>. </p>
 
     </section>
     
@@ -94,47 +94,249 @@
     
     <section>
       <h2 class="principle" id="perceivable">Perceivable</h2>
-      <p>[to be drafted]</p>
+      <h3>Guideline 1.1 Text Alternatives: Provide text alternatives for any   non-text content so that it can be changed into other forms people need,   such as large print, braille, speech, symbols or simpler language.</h3>
+      <h4>1.1.1 Non-text Content</h4>
+      <ul>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M019">M019</a>: Providing media metadata</li>
+      </ul>
+      <h3>Guideline 1.2 Time-based Media: Provide alternatives for time-based media.</h3>
+      <h4>1.2.1 Audio-only and Video-only (Prerecorded)</h4>
+      <h4>1.2.2 Captions (Prerecorded)</h4>
+      <h4>1.2.3 Audio Description or Media Alternative (Prerecorded)</h4>
+      <h4>1.2.4 Captions (Live)</h4>
+      <h4>1.2.5 Audio Description (Prerecorded)</h4>
+      <h4>1.2.6 Sign Language (Prerecorded)</h4>
+      <h4>1.2.7 Extended Audio Description  (Prerecorded)</h4>
+      <h4>1.2.8 Media Alternative (Prerecorded)</h4>
+      <h4>1.2.9 Audio-only (Live)</h4>
+      <div>
+        <h3>Guideline 1.3 Adaptable: Create content that   can be presented in different ways (for example simpler layout) without   losing information or structure.</h3>
+      </div>
+      <h4>1.3.1 Info and Relationships</h4>
+      <ul>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M006">M006</a> <strong>Data Type: </strong>Specifying input type for numerical or character data</li>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M008">M008</a><strong> Data Mask:</strong> Set the virtual keyboard to the type of data entry required</li>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M023">M023</a>: Set the HTML virtual keyboard to the type of data entry required.</li>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M024">M024</a>: Set the iOS virtual keyboard to the type of data entry required.</li>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M025">M025</a>: Set the Android virtual keyboard to the type of data entry required.</li>
+      </ul>
+      <h4>1.3.2 Meaningful Sequence</h4>
+      <ul>
+        <li>[MOBILE] Changing between device orientations provide correct reading sequence</li>
+      </ul>
+      <h4>1.3.3 Sensory Characteristics</h4>
+      <ul>
+        <li>[MOBILE] Provide instructions to help users know the location of elements on the touch screen</li>
+      </ul>
+      <div>
+        <h3>Guideline 1.4 Distinguishable:         Make it easier for users to see and hear content including separating foreground from background. </h3>
+      </div>
+      <h4>1.4.1 Use of Color</h4>
+      <h4>1.4.2 Audio Control</h4>
+      <h4>1.4.3 Contrast (Minimum)</h4>
+      <ul>
+        <li><strong>[MOBILE] Color Contrast: </strong>The default point size   for mobile platforms might be larger than the default point size used   on non-mobile devices. When determining which contrast ratio to follow,   developers should strive to make sure to apply the lessened contrast   ratio only when text is roughly equivalent to 1.2 times bold or 1.5   times (120% bold or 150%) that of the default platform size. </li>
+      </ul>
+      <h4>1.4.4 Resize text</h4>
+      <ul>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M013">M013</a>: Providing a way for users to change font size</li>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M021">M021</a>: <strong>Pinch Zoom:</strong> Setting viewport meta setting to allow magnification to 200%</li>
+        <li><strong>[MOBILE] Platform Text Size: </strong>Support for system fonts that follow platform level user preferences for text size to at least 200%.</li>
+        <li><strong>[MOBILE] On-Page Controls: </strong>Provide on-page controls to change the text size. </li>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M016">M016</a>: Providing vertical navigation mechanisms that work without horizontal scrolling on narrow width screens</li>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M018">M018</a>: Ensuring that menu can be zoomed to 200%</li>
+      </ul>
+      <h4>1.4.5 Images of Text</h4>
+      <h4>1.4.6 Contrast (Enhanced)</h4>
+      <h4>1.4.7 Low or No Background Audio</h4>
+      <h4>1.4.8 Visual Presentation</h4>
+      <ul>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M009">M009</a>: Adapting the length of link texts to viewport width</li>
+      </ul>
+      <h4>1.4.9 Images of Text (No Exception)    </h4>
     </section>
     
 <section>
-      <h2 class="principle" id="operable">Operable</h2>
-  <section><h3>WCAG</h3>
-  </section>
-  <section><h3>WCAG</h3>
-  </section>
-  <section><h3>WCAG</h3>
-  </section>
-  <section><h3>WCAG</h3>
-  </section>
+  <h2 class="principle" id="operable">Principle 2: Operable - User interface components and navigation must be operable.</h2>
+    <div>
+      <h3>Guideline 2.1 Keyboard Accessible:         Make all functionality available from a keyboard. </h3>
+    </div>
+    <h4>2.1.1 Keyboard</h4>
+    <ul>
+      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M011">M011</a>: Ensuring that the interface can be used with a physical keyboard</li>
+      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M014">M014</a>: Ensuring that navigation works on different screen sizes</li>
+    </ul>
+    <h4>2.1.2 No Keyboard Trap</h4>
+    <h4>2.1.3 Keyboard (No Exception)</h4>
+    <div>
+      <h3>Guideline 2.2 Enough Time:         Provide users enough time to read and use content. </h3>
+    </div>
+    <h4>2.2.1 Timing Adjustable</h4>
+    <h4>2.2.2 Pause, Stop, Hide</h4>
+    <h4>2.2.3 No Timing</h4>
+    <h4>2.2.4 Interruptions</h4>
+    <h4>2.2.5 Re-authenticating</h4>
+    <div>
+      <h3><a name="seizure" id="seizure"> </a> Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.</h3>
+    </div>
+    <h4>2.3.1 Three Flashes or Below Threshold</h4>
+    <h4>2.3.2 Three Flashes</h4>
+    <div>
+      <h3><a name="navigation-mechanisms" id="navigation-mechanisms"> </a> Guideline 2.4 Navigable:         Provide ways to help users navigate, find content, and determine where they are. </h3>
+    </div>
+    <h4>2.4.1 Bypass Blocks</h4>
+    <h4>2.4.2 Page Titled</h4>
+    <h4>2.4.3 Focus Order</h4>
+    <h4>2.4.4 Link Purpose (In Context)</h4>
+    <h4>2.4.5 Multiple Ways</h4>
+    <ul>
+      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M012">M012</a>: Including shortcuts to allow users to jump to sections of the page</li>
+    </ul>
+    <h4>2.4.6 Headings and Labels</h4>
+    <h4>2.4.7 Focus Visible</h4>
+    <ul>
+      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M001">M001</a> <strong>Touch Focus</strong>: Defining the hover, focus, selected and touch (regular, long) states</li>
+    </ul>
+    <h4>2.4.8 Location</h4>
+    <ul>
+      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M015">M015</a>: Providing a way for users to see what page they are on</li>
+    </ul>
+    <h4>2.4.9 Link Purpose (Link Only)</h4>
+    <h4>2.4.10 Section Headings  </h4>
+  <section class="guideline"> </section>
+  <section class="guideline"> </section>
   <section class="guideline">
-    <h3 id="touch-and-pointer">New Mobile Guideline 2.5 Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </h3>
-    
+    <h3 id="touch-and-pointer">Guideline 2.5 Touch and Pointer: Make it easier for users to operate touch and pointer functionality. [MOBILE] </h3>
+   
     <section >
-    <div class="scinner"><div class="doclinks">
-    <p class="supportlinks"><a  class="HTMlink" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M003">M003 - Activating elements via touch</a></p>
-  </div>
-    <h4 id="sc-touch-with-AT" class="sc">2.5.1 Touch: All functionality that is operable through touch gestures, is also available with touch with system assistive technology</h4>
-    
-</div>  
+    <div class="scinner">
+      <h4 id="sc-touch-with-AT" class="sc">2.5.1 Touch: All functionality that is operable through touch gestures, is also available with touch with system assistive technology</h4>
+    <h4>2.5.1 Touch: All functions available by   touch are still available by touch after system assistive technology   that remaps touch gestures is turned on. (Level A) [MOBILE]</h4>
+    <ul>
+      <li><strong>Techniques</strong>
+        <ul type="circle">
+          <li>Using        standard one touch controls</li>
+          <li>Providing        touch access for custom controls</li>
+        </ul>
+      </li>
+      <li><strong>Failures</strong>
+        <ul type="circle">
+          <li>Infinite        scroll gesture is not available with system screen reader</li>
+          <li>Component        can be opened but cannot be closed with touch when a system screen reader        is running</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>2.5.2  No Swipe Trap: When touch input   behavior is modified by built-in assistive technology so that touch   focus can be moved to a component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) [MOBILE]</h4>
+    <h4>2.5.3  Single Taps and Long Presses   Revocable: Interface elements that require a single tap or a long press   as input will only trigger the corresponding event when the finger is   lifted inside that element. (Level A) [MOBILE]</h4>
+    <h4>2.5.4 Touch Target Size: One dimension of   any touch targt measures at least 9 mm except when the user has reduced   the default scale of content. (Level AA) [MOBILE]</h4>
+    <ul>
+      <li><strong>[MOBILE] Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
+      <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002"> M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 9mm. </li>
+    </ul>
+    <h4>2.5.5 Touch Target Clearance: The center of   each touch target has a distance of at least 9 mm from the center of   any other touch target, except when the user has reduced the default   scale of content. (Level AA) [MOBILE]</h4>
+    <ul>
+      <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M022"> M022</a> <strong>Spacing between elements</strong>. </li>
+    </ul>
+    <h4>2.5.6 Device manipulation: When device   manipulation gestures are provided, touch and keyboard operable   alternative control options are available. (Level AA) [MOBILE]</h4>
+    <ul>
+      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M010">M010</a>: Allowing users to interact using device buttons (e.g. arrow keys, ok button)    </li>
+    </ul>
+    </div>  
   </section>
-  <section>
-      <p>&nbsp;</p>
-</section>
-</section>
+  </section>
 </section>    
     <section>
-      <h2 class="principle" id="understandable">Understandable</h2>
-      <p>[to be drafted]</p>
+      <h2 class="principle" id="understandable">Principle 3: Understandable - Information and the operation of user interface must be understandable.</h2>
+      <div>
+        <h3>Guideline 3.1 Readable:         Make text content readable and understandable. </h3>
+      </div>
+      <h4>3.1.1 Language of Page</h4>
+      <h4>3.1.2 Language of Parts</h4>
+      <h4>3.1.3 Unusual Words</h4>
+      <h4>3.1.4 Abbreviations</h4>
+      <h4>3.1.5 Reading Level</h4>
+      <h4>3.1.6 Pronunciation</h4>
+      <div>
+        <h3>Guideline 3.2 Predictable:         Make Web pages appear and operate in predictable ways. </h3>
+      </div>
+      <h4>3.2.1 On Focus</h4>
+      <h4>3.2.2 On Input</h4>
+      <h4>3.2.3 Consistent      Navigation</h4>
+      <ul>
+        <li><strong>[MOBILE] Navigation Bar: </strong>If the navigation bar   is collapsed into a single icon, the entries in the drop-down list that   appear when activating the icon are still in the same relative order as   the full navigation menu.</li>
+        <li><strong>[MOBILE] Orientation  Order: </strong>A Web site, when   viewed on the different screen sizes and in different orientations, has   some components that are hidden or appear in a different order. The   components that show, however, remain consistent for any screen size and   orientation.</li>
+      </ul>
+      <h4>3.2.4 Consistent Identification</h4>
+      <h4> 3.2.5 Change on Request</h4>
+      <div>
+        <h3>Guideline 3.3 Input Assistance:         Help users avoid and correct mistakes. </h3>
+      </div>
+      <h4>3.3.1 Error Identification</h4>
+      <h4>3.3.2 Labels or Instructions</h4>
+      <ul>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M005">M005</a>:   Providing instructions for custom functions and gestures (Instructions   (e.g. overlays, tooltips, tutorials, etc.) should be provided to explain   what gestures can be used to control a given interface and whether   there are alternatives.)</li>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M020">M020</a>: Providing instructions for form data types</li>
+      </ul>
+      <h4>3.3.3 Error Suggestion</h4>
+      <h4>3.3.4 Error Prevention (Legal, Financial, Data)</h4>
+      <h4>3.3.5 Help</h4>
+      <h4>3.3.6 Error Prevention (All)</h4>
+      <div>
+        <h3>Guideline 3.4 Make content usable in  device orientations.[MOBILE] </h3>
+      </div>
+      <h4>3.4.1 Expose Orientation: Changes in   orientation are programmatically exposed to ensure  assistive technology   such as screen readers know the changes in layout. [MOBILE]</h4>
+      <div>
+        <h3><a name="distinguishable" id="distinguishable"> </a> Guideline 3.5 Make interactive elements distinguishable  [MOBILE] </h3>
+      </div>
+      <h4>3.5.1 Triggers Distinguishable: Elements   that trigger changes should be sufficiently distinct to be clearly   distinguishable from non-actionable elements (content, status   information, etc). [MOBILE]</h4>
+      <ul>
+        <li>
+          <div><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M004">M004</a>: Providing clear indication that elements are actionable / Design actionable objects to look actionable </div>
+          <ul>
+            <li>
+              <div><strong>Conventional Shape:</strong> Button shape (rounded corners, drop shadows), checkbox, select rectangle with arrow pointing downwards</div>
+            </li>
+            <li>
+              <div><strong>Iconography:</strong> conventional visual icons (question mark, home icon, burger icon for menu, floppy disk for save, back arrow, etc)</div>
+            </li>
+            <li>
+              <div><strong>Color Offset:</strong> shape with different background color to distinguish the element from the page background, different text color</div>
+            </li>
+            <li>
+              <div><strong>Conventional Style: </strong>Underlined text for links, color for links</div>
+            </li>
+            <li>
+              <div><strong>Conventional positioning:</strong> Commonly used   position such as a top left position for back button (iOS), position of   menu items within left-aligned lists in drop-down menus for navigation</div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>&nbsp;</p>
     </section>
     
     <section>
-      <h2 class="principle" id="robust">Robust</h2>
-      <p>[to be drafted]</p>
+      <h2 class="principle" id="robust">Principle 4: Robust - Content must be robust   enough that it can be interpreted reliably by a wide variety of user   agents, including assistive technologies.</h2>
+      <div>
+        <h3>Guideline 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.</h3>
+      </div>
+      <h4>4.1.1 Parsing </h4>
+      <h4>4.1.2 Name, Role, Value</h4>
+      <ul>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M017">M017</a>: Providing the open/closed state information in the menu icon</li>
+      </ul>
+      <h4> 4.1.3 Non-interference of AT: Content does   not interfere with default functionality of platform level assistive   technology [MOBILE]</h4>
+      <ul>
+        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M007">M007</a>: Supporting the characteristic properties of the platform (e.g. zoom, larger font, captions)</li>
+      </ul>
+      <div>
+        <h3>Techniques with No Home</h3>
+      </div>
+      <p><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M003">M003</a><strong> Touch Activation:</strong> Activating elements via the touchend event</p>
+      <p>&nbsp;</p>
     </section>
     
   <section class='appendix'>
-      <h2>Acknowledgements</h2>
+    <h2>Acknowledgements</h2>
     <p>
       Thanks to active members of the Task Force</p>
       <p>Thanks to prior members of the Task Force</p>
