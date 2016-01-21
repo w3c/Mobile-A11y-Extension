@@ -72,6 +72,9 @@
           // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
       };
     </script>
+    <style>
+	.proposed {background-color:#FFFFCC}
+	</style>
   </head>
   <body>
     <section id='abstract'>
@@ -206,48 +209,172 @@
   <section class="guideline"> </section>
   <section class="guideline"> </section>
   <section class="guideline">
-    <h3 id="touch-and-pointer">Guideline 2.5 Touch and Pointer: Make it easier for users to operate touch and pointer functionality. [MOBILE] </h3>
-   
-    <section >
-    <div class="scinner">
-      <h4 id="sc-touch-with-AT" class="sc">2.5.1 Touch: All functionality that is operable through touch gestures, is also available with touch with system assistive technology</h4>
-    <h4>2.5.1 Touch: All functions available by   touch are still available by touch after system assistive technology   that remaps touch gestures is turned on. (Level A) [MOBILE]</h4>
-    <ul>
+    <h3 id="touch-and-pointer"> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5 Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </h3>
+    <section class="understanding">
+    <h4>Intent of Guideline 2.5</h4>
+    <p><span class="proposed">[Proposed text for Understanding] </span>Some devices such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  </p>
+    <p>
+Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox).</p>
+    <p>
+If all functionality can be achieved using the touchscreen with the assistive technology, then all users will be able to easily use the device.</p>
+   </section>
+
+<section class="sc">
+    <h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.1 Touch: All functions available by touch are still available by touch after system assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
+    <section class="understanding">
+      <p><span class="proposed">[Proposed text for Understanding] </span></p>
+      <h5>Intent of this Success Criterion</h5>
+      <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with system assistive technology.  
+Some assistive technology such as a screen reader will change the gestures that are used to interact with content when it is turned on.   For example, on both iOS and Android platforms a single tap on the touch screen will activate the element that currently has focus.  When the system screen reader is turned on, a single tap will move focus to that element and a double tap will activate the element.
+All functions available by touch when the system assistive technology is not turn on must be still available when the system assistive technology is turned on.</p>
+      <h5>Specific Benefits of Success Criterion 2.5.1</h5>
+      <ul>
+        <li>People who are blind who rely on the use of a screen reader while interacting with the touch screen</li>    
+        <li>People  	with low vision who may also need speech turned on while interacting  	with the touch screen</li>
+      </ul>
+   <h5>Examples of Success Criterion 2.5.1</h5>
+   	  <ul>
+         <li>&nbsp;Example 1</li>
+      </ul>
+   <h5>Related Resources</h5>
+   <p>Resources are for information purposes only, no endorsement implied.</p>
+   <p>(none currently documented)</p>
+   <h5>Techniques and Failures for Success Criterion 2.5.1</h5>
+      <ul>
       <li><strong>Techniques</strong>
         <ul type="circle">
-          <li>Using        standard one touch controls</li>
-          <li>Providing        touch access for custom controls</li>
+          <li>Using standard one touch controls</li>
+          <li>Providing touch access for custom controls</li>
         </ul>
       </li>
       <li><strong>Failures</strong>
         <ul type="circle">
-          <li>Infinite        scroll gesture is not available with system screen reader</li>
-          <li>Component        can be opened but cannot be closed with touch when a system screen reader        is running</li>
+          <li>Infinite scroll gesture is not available with system screen reader</li>
+          <li>Component can be opened but cannot be closed with touch when a system screen reader is running</li>
         </ul>
       </li>
     </ul>
-    <h4>2.5.2  No Swipe Trap: When touch input   behavior is modified by built-in assistive technology so that touch   focus can be moved to a component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) [MOBILE]</h4>
-    <h4>2.5.3  Single Taps and Long Presses   Revocable: Interface elements that require a single tap or a long press   as input will only trigger the corresponding event when the finger is   lifted inside that element. (Level A) [MOBILE]</h4>
-    <ul>
-      <li>[MOBILE] Touch events are only triggered when touch is removed from a control</li>
-      <li>[MOBILE] Failure of SC 2.5.3 due to activating a button on initial touch location rather than the final touch location</li>
-    </ul>
-    <h4>2.5.4 Touch Target Size: One dimension of   any touch targt measures at least 9 mm except when the user has reduced   the default scale of content. (Level AA) [MOBILE]</h4>
-    <ul>
-      <li><strong>[MOBILE] Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
-      <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002"> M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 9mm. </li>
-    </ul>
-    <h4>2.5.5 Touch Target Clearance: The center of   each touch target has a distance of at least 9 mm from the center of   any other touch target, except when the user has reduced the default   scale of content. (Level AA) [MOBILE]</h4>
-    <ul>
-      <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M022"> M022</a> <strong>Spacing between elements</strong>. </li>
-    </ul>
-    <h4>2.5.6 Device manipulation: When device   manipulation gestures are provided, touch and keyboard operable   alternative control options are available. (Level AA) [MOBILE]</h4>
-    <ul>
-      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M010">M010</a>: Allowing users to interact using device buttons (e.g. arrow keys, ok button)    </li>
-    </ul>
-    </div>  
   </section>
   </section>
+<section class="sc">
+    <h4 id="swipe-trap"><span class="proposed">[Proposed New MOBILE Success Criteria] </span> 2.5.2  No Swipe Trap: When touch input   behavior is modified by built-in assistive technology so that touch   focus can be moved to a
+component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) </h4>
+<section class="understanding">
+<p><span class="proposed">[Proposed text for Understanding] </span></p>
+<h5 class="intent">Intent of this Success Criterion</h5>
+<p>&nbsp;</p>
+<h5 class="benefit">Specific Benefits of Success Criterion 2.5.2</h5>
+<ul>
+<li>&nbsp;</li>
+</ul>
+<h5 class="examples">Examples of Success Criterion 2.5.2</h5>
+<ul>
+<li>Example 1</li>
+</ul>
+<h5 class="resources">Related Resources</h5>
+<p>Resources are for information purposes only, no endorsement implied.</p>
+<p>(none currently documented)</p>
+<h5 class="techniques">Techniques and Failures for Success Criterion 2.5.2</h5>
+<ul>
+<li>&nbsp;</li>
+</ul>
+</section>   
+</section>
+<section class="sc">
+  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.3  Single Taps and Long Presses   Revocable: Interface elements that require a single tap or a long press   as input will only trigger the corresponding event when the finger is   lifted inside that element. (Level A)</h4>
+<section class="understanding">
+<p><span class="proposed">[Proposed text for Understanding] </span></p>
+<h5 class="intent">Intent of this Success Criterion</h5>
+<p>&nbsp;</p>
+<h5 class="benefit">Specific Benefits of Success Criterion 2.5.3</h5>
+<ul>
+<li>&nbsp;</li>
+</ul>
+<h5 class="examples">Examples of Success Criterion 2.5.3</h5>
+<ul>
+<li>Example 1</li>
+</ul>
+<h5 class="resources">Related Resources</h5>
+<p>Resources are for information purposes only, no endorsement implied.</p>
+<p>(none currently documented)</p>
+<h5 class="techniques">Techniques and Failures for Success Criterion 2.5.3</h5>
+  <ul>
+    <li>Mxxx Touch events are only triggered when touch is removed from a control</li>
+    <li>Mxxx Failure of SC 2.5.3 due to activating a button on initial touch location rather than the final touch location</li>
+  </ul>
+  </section>
+</section>
+<section class="sc">    
+  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.4 Touch Target Size: One dimension of   any touch targt measures at least 9 mm except when the user has reduced   the default scale of content. (Level AA) </h4>
+  <section class="understanding">
+<p><span class="proposed">[Proposed text for Understanding] </span></p>
+<h5 class="intent">Intent of this Success Criterion</h5>
+<p>&nbsp;</p>
+<h5 class="benefit">Specific Benefits of Success Criterion 2.5.4</h5>
+<ul>
+<li>&nbsp;</li>
+</ul>
+<h5 class="examples">Examples of Success Criterion 2.5.4</h5>
+<ul>
+<li>Example 1</li>
+</ul>
+<h5 class="resources">Related Resources</h5>
+<p>Resources are for information purposes only, no endorsement implied.</p>
+<p>(none currently documented)</p>
+<h5 class="techniques">Techniques and Failures for Success Criterion 2.5.4</h5>
+  <ul>
+    <li><strong>Mxxx Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
+    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002"> M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 9mm. </li>
+  </ul>
+  </section>
+ </section>
+<section class="sc">
+  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.5 Touch Target Clearance: The center of   each touch target has a distance of at least 9 mm from the center of   any other touch target, except when the user has reduced the default   scale of content. (Level AA)</h4>
+  <section class="understanding">
+<p><span class="proposed">[Proposed text for Understanding] </span></p>
+<h5 class="intent">Intent of this Success Criterion</h5>
+<p>&nbsp;</p>
+<h5 class="benefit">Specific Benefits of Success Criterion 2.5.5</h5>
+<ul>
+<li>&nbsp;</li>
+</ul>
+<h5 class="examples">Examples of Success Criterion 2.5.5</h5>
+<ul>
+<li>Example 1</li>
+</ul>
+<h5 class="resources">Related Resources</h5>
+<p>Resources are for information purposes only, no endorsement implied.</p>
+<p>(none currently documented)</p>
+<h5 class="techniques">Techniques and Failures for Success Criterion 2.5.5</h5>
+  
+  <ul>
+    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M022"> M022</a> <strong>Spacing between elements</strong>. </li>
+  </ul>
+  </section>
+ </section>
+<section class="sc">
+<h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.6 Device manipulation: When device   manipulation gestures are provided, touch and keyboard operable   alternative control options are available. (Level AA) </h4>
+<section class="understanding">
+<p><span class="proposed">[Proposed text for Understanding] </span></p>
+<h5 class="intent">Intent of this Success Criterion</h5>
+<p>&nbsp;</p>
+<h5 class="benefit">Specific Benefits of Success Criterion 2.5.6</h5>
+<ul>
+<li>&nbsp;</li>
+</ul>
+<h5 class="examples">Examples of Success Criterion 2.5.6</h5>
+<ul>
+<li>Example 1</li>
+</ul>
+<h5 class="resources">Related Resources</h5>
+<p>Resources are for information purposes only, no endorsement implied.</p>
+<p>(none currently documented)</p>
+<h5 class="techniques">Techniques and Failures for Success Criterion 2.5.6</h5>
+<ul>
+  <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M010">M010</a>: Allowing users to interact using device buttons (e.g. arrow keys, ok button)    </li>
+</ul>
+    </section> 
+    </section>
 </section>    
     <section>
       <h2 class="principle" id="understandable">Principle 3: Understandable - Information and the operation of user interface must be understandable.</h2>
