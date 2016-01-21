@@ -286,10 +286,10 @@
     <p><span class="proposed">[Proposed text for Understanding] </span>Some devices such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  </p>
     <p>
 Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). </p>
-    <p>Be famililar with your platform's system controls and standards for assistive technology. Use the system controls supported by the platform first and don't overwrite the standard gestures of the platform. Don't use a common gesture for a purpose that is not common. </p>
     </section>
 
     <section class="sc">    </section>
+    <section class="sc"></section>
     <section class="sc"><h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.1 Touch: All functions available by touch are still available by touch after system assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
     <section class="understanding">
       <p><span class="proposed">[Proposed text for Understanding] </span></p>
@@ -297,6 +297,7 @@ Mobile device design has evolved away from built-in physical keyboards (e.g. fix
       <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with system assistive technology.  
 Some assistive technology such as a screen reader will change the gestures that are used to interact with content when it is turned on.   For example, on both iOS and Android platforms a single tap on the touch screen will activate the element that currently has focus.  When the system screen reader is turned on, a single tap will move focus to that element and a double tap will activate the element.
 All functions available by touch when the system assistive technology is not turn on must be still available when the system assistive technology is turned on.</p>
+      <p>Be famililar with your platform's system controls and standards for assistive technology. Use the system controls supported by the platform first and don't overwrite the standard gestures of the platform. Don't use a common gesture for a purpose that is not common. </p>
       <h5>Specific Benefits of Success Criterion 2.5.1</h5>
       <ul>
         <li>People who are blind who rely on the use of a screen reader while interacting with the touch screen</li>    
@@ -304,9 +305,20 @@ All functions available by touch when the system assistive technology is not tur
       </ul>
    <h5>Examples of Success Criterion 2.5.1</h5>
    	  <ul>
-         <li>&nbsp;Example 1</li>
+         <li> For example, if a developer assigns a double tap as a custom gesture, as the only way to complete an action, a user who is blind using VoiceOver will not have access to that action because VoiceOver reserves the double tap to select an item. </li>
       </ul>
    <h5>Related Resources</h5>
+   <ul>
+     <li><a href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/InteractivityInput.html">Apple iOS Developer Library: Interactivity and Feedback</a></li>
+     <li><a href="https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityonYourDevicewithVoiceOver/TestAccessibilityonYourDevicewithVoiceOver.html">Apple iOS Developer Library: Test Accessibility on Your Device with VoiceOver</a></li>
+     <li><a href="https://support.google.com/accessibility/android/answer/6151827?hl=en">Android Training: Using Touch Gestures</a></li>
+     <li><a href="http://developer.android.com/training/gestures/index.html">Google Android Accessibility Help: Use TalkBack gestures</a></li>
+     <li><a href="http://www.windowsphone.com/en-us/how-to/wp7/start/gestures-flick-pan-and-stretch">Windows Phone: Gestures: flick, pan, and stretch</a></li>
+     <li><a href="https://www.microsoft.com/en/mobile/accessibility/use-narrator-on-my-phone/">Microsoft: Use Narrator on my phone</a></li>
+     <li><a href="http://downloadcenter.samsung.com/content/UM/201503/20150303094626458/SM-G920F_UM_EU_Lollipop_Eng_Rev.1.0_150302.pdf">Samsung User Manual (pdf)</a></li>
+     <li>[jeanne will check UAAG for links to other mobile platforms - Blackberry]</li>
+   </ul>
+   <p>&nbsp;</p>
    <p>Resources are for information purposes only, no endorsement implied.</p>
    <p>(none currently documented)</p>
    <h5>Techniques and Failures for Success Criterion 2.5.1</h5>
