@@ -225,7 +225,7 @@
       </section>
       <section class="guideline">
     <div>
-      <h3><a name="seizure" id="seizure"> </a> WCAG Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.</h3>
+      <h3><a id="seizure"> </a> WCAG Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.</h3>
     </div>
     <section class="sc">
     <h4>2.3.1 Three Flashes or Below Threshold</h4>
@@ -236,7 +236,7 @@
       </section>
   <section class="guideline">
     <div>
-      <h3><a name="navigation-mechanisms" id="navigation-mechanisms"> </a> WCAG Guideline 2.4 Navigable:         Provide ways to help users navigate, find content, and determine where they are. </h3>
+      <h3><a id="navigation-mechanisms"> </a> WCAG Guideline 2.4 Navigable:         Provide ways to help users navigate, find content, and determine where they are. </h3>
     </div>
     <section class="sc">
     <h4>2.4.1 Bypass Blocks</h4>
@@ -289,13 +289,9 @@
     <p>
 Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). </p>
     </section>
-
-    <section class="sc">    </section>
-    <section class="sc"></section>
     <section class="sc"><h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.1 Touch: All functions available by touch are still available by touch after system assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
     <section class="understanding">
-      <p><span class="proposed">[Proposed text for Understanding] </span></p>
-      <h5>Intent of this Success Criterion</h5>
+      <h5><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
       <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with system assistive technology.  
 Some assistive technology such as a screen reader will change the gestures that are used to interact with content when it is turned on.   For example, on both iOS and Android platforms a single tap on the touch screen will activate the element that currently has focus.  When the system screen reader is turned on, a single tap will move focus to that element and a double tap will activate the element.
 All functions available by touch when the system assistive technology is not turn on must be still available when the system assistive technology is turned on.</p>
@@ -327,13 +323,13 @@ All functions available by touch when the system assistive technology is not tur
    <h5>Techniques and Failures for Success Criterion 2.5.1</h5>
       <ul>
       <li><strong>Techniques</strong>
-        <ul type="circle">
+        <ul>
           <li>Using standard one touch controls</li>
           <li>Providing touch access for custom controls</li>
         </ul>
       </li>
       <li><strong>Failures</strong>
-        <ul type="circle">
+        <ul>
           <li>Infinite scroll gesture is not available with system screen reader</li>
           <li>Component can be opened but cannot be closed with touch when a system screen reader is running</li>
         </ul>
@@ -345,8 +341,7 @@ All functions available by touch when the system assistive technology is not tur
     <h4 id="swipe-trap"><span class="proposed">[Proposed New MOBILE Success Criteria] </span> 2.5.2  No Swipe Trap: When touch input   behavior is modified by built-in assistive technology so that touch   focus can be moved to a
 component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) </h4>
 <section class="understanding">
-<p><span class="proposed">[Proposed text for Understanding] </span></p>
-<h5 class="intent">Intent of this Success Criterion</h5>
+<h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
 <p>&nbsp;</p>
 <h5 class="benefit">Specific Benefits of Success Criterion 2.5.2</h5>
 <ul>
@@ -368,8 +363,7 @@ component of the page using swipe gestures, then   focus can be moved away from 
 <section class="sc">
   <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.3  Single Taps and Long Presses   Revocable: Interface elements that require a single tap or a long press   as input will only trigger the corresponding event when the finger is   lifted inside that element. (Level A)</h4>
 <section class="understanding">
-<p><span class="proposed">[Proposed text for Understanding] </span></p>
-<h5 class="intent">Intent of this Success Criterion</h5>
+<h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
 <p>&nbsp;</p>
 <h5 class="benefit">Specific Benefits of Success Criterion 2.5.3</h5>
 <ul>
@@ -393,8 +387,8 @@ component of the page using swipe gestures, then   focus can be moved away from 
   <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.4 Touch Target Size:   A <a href="#def-touch-target">touch target</a> is at least 44px x 44px of the visible display at the default viewport size. (Level AA) </h4>
   <p id="def-touch-target">Definition of <strong>touch target</strong>: Region of the display that will accept a touch action. If a portion of a touch target is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.</p>
   <section class="understanding">
-<p><span class="proposed">[Proposed text for Understanding] </span></p>
-<h5 class="intent">Intent of this Success Criterion</h5>
+<h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> 
+Intent of this Success Criterion</h5>
 <p>&nbsp;</p>
 <h5 class="benefit">Specific Benefits of Success Criterion 2.5.4</h5>
 <ul>
@@ -422,8 +416,7 @@ component of the page using swipe gestures, then   focus can be moved away from 
 <section class="sc">
 <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.5 Device manipulation: When device   manipulation gestures are provided, touch and keyboard operable   alternative control options are available. (Level AA) </h4>
 <section class="understanding">
-<p><span class="proposed">[Proposed text for Understanding] </span></p>
-<h5 class="intent">Intent of this Success Criterion</h5>
+<h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
 <p>&nbsp;</p>
 <h5 class="benefit">Specific Benefits of Success Criterion 2.5.5</h5>
 <ul>
@@ -486,7 +479,7 @@ component of the page using swipe gestures, then   focus can be moved away from 
       </div>
       <h4>3.4.1 Expose Orientation: Changes in   orientation are programmatically exposed to ensure  assistive technology   such as screen readers know the changes in layout. [MOBILE]</h4>
       <div>
-        <h3><a name="distinguishable" id="distinguishable"> </a> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.5 Make interactive elements distinguishable  </h3>
+        <h3><a id="distinguishable"> </a> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.5 Make interactive elements distinguishable  </h3>
       </div>
       <h4>3.5.1 Triggers Distinguishable: Elements   that trigger changes should be sufficiently distinct to be clearly   distinguishable from non-actionable elements (content, status   information, etc). [MOBILE]</h4>
       <ul>
