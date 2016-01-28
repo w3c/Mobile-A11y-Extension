@@ -390,7 +390,8 @@ component of the page using swipe gestures, then   focus can be moved away from 
   </section>
 </section>
 <section class="sc">    
-  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.4 Touch Target Size:   A touch target is at least 44px x 44px of the visible display at the default viewport size. (Level AA) </h4>
+  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.4 Touch Target Size:   A <a href="#def-touch-target">touch target</a> is at least 44px x 44px of the visible display at the default viewport size. (Level AA) </h4>
+  <p id="def-touch-target">Definition of <strong>touch target</strong>: Region of the display that will accept a touch action. If a portion of a touch target is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.</p>
   <section class="understanding">
 <p><span class="proposed">[Proposed text for Understanding] </span></p>
 <h5 class="intent">Intent of this Success Criterion</h5>
@@ -409,13 +410,18 @@ component of the page using swipe gestures, then   focus can be moved away from 
 <h5 class="techniques">Techniques and Failures for Success Criterion 2.5.4</h5>
   <ul>
     <li><strong>Mxxx Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
-    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002"> M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 9mm. </li>
+    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002"> M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 44px by 44px. </li>
+    <li> Mxxx Failure: touch target is less than 44px x 44px</li>
+    <li>Mxxx Failure: touch target is less than 44px x 44px at the default viewport size</li>
   </ul>
   </section>
  </section>
 <section class="sc">
-  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.5 Touch Target Clearance: The center of   each touch target has a distance of at least 44 pixels from the center of   any other touch target, except when the user has reduced the default   scale of content. (Level AA)</h4>
-  <section class="understanding">
+  <section class="understanding"></section>
+ </section>
+<section class="sc">
+<h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.5 Device manipulation: When device   manipulation gestures are provided, touch and keyboard operable   alternative control options are available. (Level AA) </h4>
+<section class="understanding">
 <p><span class="proposed">[Proposed text for Understanding] </span></p>
 <h5 class="intent">Intent of this Success Criterion</h5>
 <p>&nbsp;</p>
@@ -431,31 +437,6 @@ component of the page using swipe gestures, then   focus can be moved away from 
 <p>Resources are for information purposes only, no endorsement implied.</p>
 <p>(none currently documented)</p>
 <h5 class="techniques">Techniques and Failures for Success Criterion 2.5.5</h5>
-  
-  <ul>
-    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M022"> M022</a> <strong>Spacing between elements</strong>. </li>
-    <li>Mxxx Failure: touch targets overlapping</li>
-  </ul>
-  </section>
- </section>
-<section class="sc">
-<h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.6 Device manipulation: When device   manipulation gestures are provided, touch and keyboard operable   alternative control options are available. (Level AA) </h4>
-<section class="understanding">
-<p><span class="proposed">[Proposed text for Understanding] </span></p>
-<h5 class="intent">Intent of this Success Criterion</h5>
-<p>&nbsp;</p>
-<h5 class="benefit">Specific Benefits of Success Criterion 2.5.6</h5>
-<ul>
-<li>&nbsp;</li>
-</ul>
-<h5 class="examples">Examples of Success Criterion 2.5.6</h5>
-<ul>
-<li>Example 1</li>
-</ul>
-<h5 class="resources">Related Resources</h5>
-<p>Resources are for information purposes only, no endorsement implied.</p>
-<p>(none currently documented)</p>
-<h5 class="techniques">Techniques and Failures for Success Criterion 2.5.6</h5>
 <ul>
   <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M010">M010</a>: Allowing users to interact using device buttons (e.g. arrow keys, ok button)    </li>
 </ul>
