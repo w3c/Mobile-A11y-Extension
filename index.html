@@ -289,12 +289,13 @@
     <p>
 Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). </p>
     </section>
-    <section class="sc"><h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.1 Touch: All functions available by touch are still available by touch after system assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
+    <section class="sc">
+    <h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.1 Touch: All functions available by touch are still available by touch after platform assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
     <section class="understanding">
       <h5><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
-      <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with system assistive technology.  
+      <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with platform assistive technology.  
 Some assistive technology such as a screen reader will change the gestures that are used to interact with content when it is turned on.   For example, on both iOS and Android platforms a single tap on the touch screen will activate the element that currently has focus.  When the system screen reader is turned on, a single tap will move focus to that element and a double tap will activate the element.
-All functions available by touch when the system assistive technology is not turn on must be still available when the system assistive technology is turned on.</p>
+All functions available by touch when the platform assistive technology is not turn on must be still available when the platform assistive technology is turned on.</p>
       <p>Be famililar with your platform's system controls and standards for assistive technology. Use the system controls supported by the platform first and don't overwrite the standard gestures of the platform. Don't use a common gesture for a purpose that is not common. </p>
       <h5>Specific Benefits of Success Criterion 2.5.1</h5>
       <ul>
@@ -338,7 +339,7 @@ All functions available by touch when the system assistive technology is not tur
   </section>
   </section>
 <section class="sc">
-    <h4 id="swipe-trap"><span class="proposed">[Proposed New MOBILE Success Criteria] </span> 2.5.2  No Swipe Trap: When touch input   behavior is modified by built-in assistive technology so that touch   focus can be moved to a
+    <h4 id="swipe-trap"><span class="proposed">[Proposed New MOBILE Success Criteria] </span> 2.5.2  No Swipe Trap: When touch input   behavior is modified by platform assistive technology so that touch   focus can be moved to a
 component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) </h4>
 <section class="understanding">
 <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
@@ -361,7 +362,7 @@ component of the page using swipe gestures, then   focus can be moved away from 
 </section>   
 </section>
 <section class="sc">
-  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.3  Single Taps and Long Presses   Revocable: Interface elements that require a single tap or a long press   as input will only trigger the corresponding event when the finger is   lifted inside that element. (Level A)</h4>
+  <h4 id="tap-press-revocable"><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.3  Single Taps and Long Presses   Revocable: Interface elements that require a single tap or a long press   as input will only trigger the corresponding event when the finger is   lifted inside that element. (Level A)</h4>
 <section class="understanding">
 <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
 <p>&nbsp;</p>
@@ -378,7 +379,7 @@ component of the page using swipe gestures, then   focus can be moved away from 
 <p>(none currently documented)</p>
 <h5 class="techniques">Techniques and Failures for Success Criterion 2.5.3</h5>
   <ul>
-    <li>Mxxx Touch events are only triggered when touch is removed from a control</li>
+    <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M029">M029</a> Touch events are only triggered when touch is removed from a control</li>
     <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM001">FM001</a> Failure of SC 2.5.3 due to activating a button on initial touch location rather than the final touch location</li>
   </ul>
   </section>
@@ -403,10 +404,10 @@ Intent of this Success Criterion</h5>
 <p>(none currently documented)</p>
 <h5 class="techniques">Techniques and Failures for Success Criterion 2.5.4</h5>
   <ul>
-    <li><strong>Mxxx Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
-    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002"> M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 44px by 44px. </li>
-    <li> Mxxx Failure: touch target is less than 44px x 44px</li>
-    <li>Mxxx Failure: touch target is less than 44px x 44px at the default viewport size</li>
+    <li><strong><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M030">M030</a> Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
+    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002">M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 44px by 44px. </li>
+    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM004">FM004</a>  Failure: touch target is less than 44px x 44px</li>
+    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM005">FM005</a>  Failure: touch target is less than 44px x 44px at the default viewport size</li>
   </ul>
   </section>
  </section>
@@ -526,8 +527,17 @@ Intent of this Success Criterion</h5>
       <p><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M003">M003</a><strong> Touch Activation:</strong> Activating elements via the touchend event</p>
       <p>&nbsp;</p>
     </section>
-    
+  <section id="glossary">
+  <h2>Glossary</h2>
+  <dl>
+  <dt><dfn>Platform assistive technology</dfn> </dt>
+  <dd>Platform assistive technology is built into the operating system and is generally updated through OS updates. Examples include VoiceOver on iOS and TalkBack on Android. </dd>
+  <dt#def-touch-target><dfn>touch target</dfn></dt>
+  <dd>Region of the display that will accept a touch action. If a portion of a touch target is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.</dd>
+  </dl>
+  </section>  
   <section class='appendix'>
+    <p>&nbsp;</p>
     <h2>Acknowledgements</h2>
     <p>
       Thanks to active members of the Task Force</p>
