@@ -340,14 +340,15 @@ All functions available by touch when the platform assistive technology is not t
 component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) </h4>
 <section class="understanding">
 <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
-<p>&nbsp;</p>
+<p class="proposed">Swipe gestures are useful for displaying new content. Giving focus to new content via a swipe gesture also needs a gesture or method to move focus back to the main content &mdash; either by swiping to return or by informing the user of the method needed to return. These methods must work with assistive technology. This success criterion is the touch equivalent of WCAG 2.1.2 No keyboard trap. </p>
 <h5 class="benefit">Specific Benefits of Success Criterion 2.5.2</h5>
 <ul>
-<li>&nbsp;</li>
+<li>Content that is  after or outside of infinite content or content that is off the visible screen can be accessed by screenreader users. </li>
 </ul>
 <h5 class="examples">Examples of Success Criterion 2.5.2</h5>
 <ul>
-<li>Example 1</li>
+  <li class="proposed">Infinite scroll of content, where there is additional content in the footer, but the user with assistive technology (e.g. screenreader) cannot move focus to the footer and therefore cannot read the footer content and may not even know that the footer content exists. . </li>
+  <li class="proposed">An infinite carousel advances with a swipe gesture. The instructions indicate that a touch outside the carousel will exit the carousel. The user can touch outside the carousel with assistive technology (e.g. screenreader) turned on. </li>
 </ul>
 <h5 class="resources">Related Resources</h5>
 <p>Resources are for information purposes only, no endorsement implied.</p>
@@ -363,14 +364,14 @@ component of the page using swipe gestures, then   focus can be moved away from 
   <p class="sorethumb">See Patrick's <a href="https://lists.w3.org/Archives/Public/public-mobile-a11y-tf/2015Jul/0038.html">email</a> response and following thread. </p>
   <section class="understanding">
 <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
-<p>People with various disabilities can inadvertently initiate a touch event with unwanted results. Authors can reduce this problem by making the behavior more intentional, such as providing a confirmation alert when the event is distructive or causes signicant changes, or allowing the user to slide away from the button or touch object before lifting their finger, thereby canceling the event. </p>
+<p class="proposed">People with various disabilities can inadvertently initiate a touch event with unwanted results. Authors can reduce this problem by making the behavior more intentional, such as providing a confirmation alert when the event is distructive or causes signicant changes, or allowing the user to slide away from the button or touch object before lifting their finger, thereby canceling the event. </p>
 <h5 class="benefit">Specific Benefits of Success Criterion 2.5.3</h5>
 <ul>
 <li>&nbsp;</li>
 </ul>
 <h5 class="examples">Examples of Success Criterion 2.5.3</h5>
 <ul>
-<li>Example 1</li>
+<li></li>
 </ul>
 <h5 class="resources">Related Resources</h5>
 <p>Resources are for information purposes only, no endorsement implied.</p>
@@ -383,30 +384,32 @@ component of the page using swipe gestures, then   focus can be moved away from 
   </section>
 </section>
 <section class="sc">    
-  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.4 Touch Target Size:   A <a href="#def-touch-target">touch target</a> is at least 44px x 44px of the visible display at the default viewport size. (Level AA) </h4>
-  <p id="def-touch-target">Definition of <strong>touch target</strong>: Region of the display that will accept a touch action. If a portion of a touch target is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.</p>
+  <h4><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.4 Touch Target Size:   A <a href="#def-touch-target">touch target</a> is at least 44px x 44px of the visible display at the default viewport size. (Level AA) 
+    <section class="understanding">
+    </section>
+  </h4>
   <section class="understanding">
-<h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> 
-Intent of this Success Criterion</h5>
-<p>&nbsp;</p>
-<h5 class="benefit">Specific Benefits of Success Criterion 2.5.4</h5>
-<ul>
-<li>&nbsp;</li>
-</ul>
-<h5 class="examples">Examples of Success Criterion 2.5.4</h5>
-<ul>
-<li>Example 1</li>
-</ul>
-<h5 class="resources">Related Resources</h5>
-<p>Resources are for information purposes only, no endorsement implied.</p>
-<p>(none currently documented)</p>
-<h5 class="techniques">Techniques and Failures for Success Criterion 2.5.4</h5>
+  <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> 
+    Intent of this Success Criterion</h5>
+  <p>&nbsp;</p>
+  <h5 class="benefit">Specific Benefits of Success Criterion 2.5.4</h5>
   <ul>
-    <li><strong><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M030">M030</a> Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
-    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002">M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 44px by 44px. </li>
-    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM004">FM004</a>  Failure: touch target is less than 44px x 44px</li>
-    <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM005">FM005</a>  Failure: touch target is less than 44px x 44px at the default viewport size</li>
+  <li>&nbsp;</li>
   </ul>
+  <h5 class="examples">Examples of Success Criterion 2.5.4</h5>
+  <ul>
+  <li>Example 1</li>
+  </ul>
+  <h5 class="resources">Related Resources</h5>
+  <p>Resources are for information purposes only, no endorsement implied.</p>
+  <p>(none currently documented)</p>
+  <h5 class="techniques">Techniques and Failures for Success Criterion 2.5.4</h5>
+    <ul>
+      <li><strong><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M030">M030</a> Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
+      <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002">M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 44px by 44px. </li>
+      <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM004">FM004</a>  Failure: touch target is less than 44px x 44px</li>
+      <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM005">FM005</a>  Failure: touch target is less than 44px x 44px at the default viewport size</li>
+      </ul>
   </section>
  </section>
 </section>
@@ -507,7 +510,7 @@ Intent of this Success Criterion</h5>
 
         <h3>WCAG Guideline 3.1 Readable:         Make text content readable and understandable. </h3>
 
-      <h4>3.1.1 Language of Page</h4>
+<h4>3.1.1 Language of Page</h4>
       <h4>3.1.2 Language of Parts</h4>
       <h4>3.1.3 Unusual Words</h4>
       <h4>3.1.4 Abbreviations</h4>
@@ -516,7 +519,7 @@ Intent of this Success Criterion</h5>
 
         <h3>WCAG Guideline 3.2 Predictable:         Make Web pages appear and operate in predictable ways. </h3>
 
-      <h4>3.2.1 On Focus</h4>
+<h4>3.2.1 On Focus</h4>
       <h4>3.2.2 On Input</h4>
       <h4>3.2.3 Consistent      Navigation</h4>
       <ul>
@@ -528,7 +531,7 @@ Intent of this Success Criterion</h5>
 
         <h3>WCAG Guideline 3.3 Input Assistance:         Help users avoid and correct mistakes. </h3>
 >
-      <h4>3.3.1 Error Identification</h4>
+<h4>3.3.1 Error Identification</h4>
       <h4>3.3.2 Labels or Instructions</h4>
       <p class="proposed">Mobile Technique proposed for WCAG 3.3.2</p>
       <ul>
@@ -542,11 +545,11 @@ Intent of this Success Criterion</h5>
 
         <h3>WCAG Guideline 3.4 Make content usable in  device orientations.[MOBILE] </h3>
 
-      <h4>3.4.1 Expose Orientation: Changes in   orientation are programmatically exposed to ensure  assistive technology   such as screen readers know the changes in layout. [MOBILE]</h4>
+  <h4>3.4.1 Expose Orientation: Changes in   orientation are programmatically exposed to ensure  assistive technology   such as screen readers know the changes in layout. [MOBILE]</h4>
 
         <h3><a id="distinguishable"> </a> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.5 Make interactive elements distinguishable  </h3>
 
-      <h4>3.5.1 Triggers Distinguishable: Elements   that trigger changes should be sufficiently distinct to be clearly   distinguishable from non-actionable elements (content, status   information, etc). [MOBILE]</h4>
+<h4>3.5.1 Triggers Distinguishable: Elements   that trigger changes should be sufficiently distinct to be clearly   distinguishable from non-actionable elements (content, status   information, etc). [MOBILE]</h4>
       <ul>
         <li>
           <div><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M004">M004</a>: Providing clear indication that elements are actionable / Design actionable objects to look actionable </div>
@@ -582,19 +585,19 @@ Intent of this Success Criterion</h5>
       <p class="proposed">Mobile Technique proposed for WCAG 4.1.2</p>
 <ul>
         <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M017">M017</a>: Providing the open/closed state information in the menu icon</li>
-      </ul>
+  </ul>
       <h4> 4.1.3 Non-interference of AT: Content does   not interfere with default functionality of platform level assistive   technology </h4>
       <p class="proposed">Mobile Technique proposed for WCAG 4.1.3</p>
 <ul>
         <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M007">M007</a>: Supporting the characteristic properties of the platform (e.g. zoom, larger font, captions)</li>
-      </ul>
-      </section>
+  </ul>
+  </section>
  <section>
         <h3 class="proposed">Techniques with No Home</h3>
 
       <p><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M003">M003</a><strong> Touch Activation:</strong> Activating elements via the touchend event</p>
       <p>&nbsp;</p>
-    </section>
+  </section>
   <section id="glossary">
   <h2>Glossary</h2>
   <dl>
