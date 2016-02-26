@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DRAFT: Mobile Accessibility WCAG Extension</title>
+    <title>Mobile Accessibility WCAG Extension</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/W3C-WD">
@@ -90,13 +90,16 @@
       <p><strong>This document is the internal working draft used by the Mobile Accessibility Task Force and is updated continuously and without notice. This is a draft document and may be updated, replaced or   obsoleted by other documents at any time. It is inappropriate to cite   this document as other than work in progress.</strong>
       </p>
       <p>This is an early draft of a document that will become a First Public Working Draft (FPWD) of the WCAG Extension on Mobile Accessibility. This document catalogs Mobile A11y Task Force proposed new mobile guidelines, success criteria and techniques. </p>
-      <p>This document is intended to become a normative extension of <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guideline (WCAG 2.0)</a> and is part of a series of technical and educational documents published by the <a href="http://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a>. </p>
+      <p>This document is intended to become a normative extension of <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guideline (WCAG 2.0)</a> [[WCAG20]] and is part of a series of technical and educational documents published by the <a href="http://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a>. </p>
 
     </section>
     
     <section class="introductory">
       <h2 id="intro">Introduction</h2>
-      <p>[to be drafted]</p>
+      <p>The Mobile Accessibility Extension to WCAG 2.0 provides guidance to improve accessibility for people with disabilities. While it generally applies to traditional mobile devices, it also applies to touch enabled desktops, kiosks, tablets and other platforms that use technology beyond the traditional mouse and keyboard. While it is primarily oriented toward web content on mobile, the guidelines and success criteria also apply to mobile applications. </p>
+      <h3>Structure of this Document</h3>
+      <p>This version of the Mobile Accessibility Extension to WCAG is closely tied with WCAG. The early work of the group focused on writing Techniques for WCAG that applied to mobile. To make it easier to understand the relationship between these mobile Techniques and WCAG, a bare outline of the WCAG success criteria are included, with the appropriate Mobile Techniques listed below the success criterion. Many WCAG success criteria do not have mobile Techniques. Techniques that are proposed but not written are marked as<strong> [Mobile]</strong>. Completed or in process mobile Techniques are numbered starting with the letter &quot;<strong>M</strong>&quot;. </p>
+      <p>New guidelines and success criteria that are not in WCAG 2.0 at the time of publication are marked as <strong>[MOBILE]</strong>. WCAG Guidelines and success criteria are prefixed with <strong>WCAG</strong>. </p>
     </section>
     
     <section class="principle">
@@ -339,27 +342,28 @@ All functions available by touch when the platform assistive technology is not t
 component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) </h4>
 <section class="understanding">
 <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
-<p class="proposed">Swipe gestures are useful for displaying new content. Giving focus to new content via a swipe gesture also needs a gesture or method to move focus back to the main content &mdash; either by swiping to return or by informing the user of the method needed to return. These methods must work with assistive technology. This success criterion is the touch equivalent of WCAG 2.1.2 No keyboard trap. </p>
+<p>Swipe gestures are useful for displaying dynamic content. Giving focus to dynamic content via a swipe gesture also needs a gesture or method to move focus back to  prior content &mdash; either by swiping to return or by informing the user of the method needed to return. These methods must work with assistive technology. This success criterion is similar to WCAG 2.1.2 No keyboard trap. </p>
 <h5 class="benefit">Specific Benefits of Success Criterion 2.5.2</h5>
 <ul>
-<li>Content that is  after or outside of infinite content or content that is off the visible screen can be accessed by screenreader users. </li>
+<li>Content that is after or outside of infinite scrolling content, or off the visible screen, can be accessed by screenreader users.</li>
 </ul>
 <h5 class="examples">Examples of Success Criterion 2.5.2</h5>
 <ul>
-  <li class="proposed">Infinite scroll of content, where there is additional content in the footer, but the user with assistive technology (e.g. screenreader) cannot move focus to the footer and therefore cannot read the footer content and may not even know that the footer content exists. . </li>
-  <li class="proposed">An infinite carousel advances with a swipe gesture. The instructions indicate that a touch outside the carousel will exit the carousel. The user can touch outside the carousel with assistive technology (e.g. screenreader) turned on. </li>
+  <li>Infinite scroll of content, where there is additional content in the footer, but the user with assistive technology (e.g. screenreader) cannot move focus to the footer and therefore cannot read the footer content and may not even know that the footer content exists. . </li>
+  <li>An infinite carousel advances with a swipe gesture. The instructions indicate that a touch outside the carousel will exit the carousel. The user can touch outside the carousel with assistive technology (e.g. screenreader) turned on.</li>
+  <li>Popup dialog that cannot be closed when assistive technology is turned on. </li>
 </ul>
 <h5 class="resources">Related Resources</h5>
 <p>Resources are for information purposes only, no endorsement implied.</p>
 <p>(none currently documented)</p>
 <h5 class="techniques">Techniques and Failures for Success Criterion 2.5.2</h5>
 <ul>
-<li>&nbsp;</li>
+<li>&nbsp;<a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM003">FM003</a> Component can be opened but cannot be closed with touch when a system screen reader is running</li>
 </ul>
 </section>   
 </section>
 <section class="sc">
-  <h4 id="tap-press-revocable"><span class="proposed">[Proposed New MOBILE Success Criteria] </span>2.5.3  Single Taps and Long Presses   Revocable: Interface elements that require a single tap or a long press   as input will only trigger the corresponding event when the finger is   lifted inside that element. (Level A)</h4>
+  <h4 class="proposed" id="tap-press-revocable">[Proposed New MOBILE Success Criteria] 2.5.3  Single Taps and Long Presses   Revocable: When the device-based assistive technology (e.g screenreader) is being used, then the selection gesture must be separate from than the activation gesture; have have confirmation; or be easily reversable. (Level A)</h4>
   <p class="sorethumb">See Patrick's <a href="https://lists.w3.org/Archives/Public/public-mobile-a11y-tf/2015Jul/0038.html">email</a> response and following thread. </p>
   <section class="understanding">
 <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
@@ -370,7 +374,7 @@ component of the page using swipe gestures, then   focus can be moved away from 
 </ul>
 <h5 class="examples">Examples of Success Criterion 2.5.3</h5>
 <ul>
-<li></li>
+<li>A user using the device screenreader is using a phone dialer. With the screenreader turned on, they use their finger to browse the screen, while the screenreader reads out the number. The user lifts their finger, and the dialer overrides the standard behavior of the operating system by dialing the number. </li>
 </ul>
 <h5 class="resources">Related Resources</h5>
 <p>Resources are for information purposes only, no endorsement implied.</p>
@@ -572,7 +576,7 @@ component of the page using swipe gestures, then   focus can be moved away from 
         </li>
       </ul>
       <p>&nbsp;</p>
-    </section>
+  </section>
     
 <section class="principle">
       <h2 class="principle" id="robust">Principle 4: Robust - Content must be robust   enough that it can be interpreted reliably by a wide variety of user   agents, including assistive technologies.</h2>
