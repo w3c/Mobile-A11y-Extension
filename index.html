@@ -338,11 +338,10 @@ All functions available by touch when the platform assistive technology is not t
   </section>
   </section>
 <section class="sc">
-    <h4 id="swipe-trap"><span class="proposed">[Proposed New MOBILE Success Criteria] </span> 2.5.2  No Swipe Trap: When touch input   behavior is modified by platform assistive technology so that touch   focus can be moved to a
-component of the page using swipe gestures, then   focus can be moved away from that component using swipe gestures or the   user is advised of the method for moving focus away. (Level A) </h4>
+    <h4 id="swipe-trap"><span class="proposed">[Proposed New MOBILE Success Criteria] </span> 2.5.2  No Touch Trap: When touch input behavior is modified by platform assistive technology and focus can be moved to a component, then focus can be moved away from component using sequential navigation gestures of assistive technology or the user is advised of the method for moving focus away in the sequential focus order. (Level A) </h4>
 <section class="understanding">
 <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
-<p>Swipe gestures are useful for displaying dynamic content. Giving focus to dynamic content via a swipe gesture also needs a gesture or method to move focus back to  prior content &mdash; either by swiping to return or by informing the user of the method needed to return. These methods must work with assistive technology. This success criterion is similar to WCAG 2.1.2 No keyboard trap. </p>
+<p>Swipe gestures are useful for displaying dynamic content. Giving focus to dynamic content via a swipe gesture also needs a gesture or method to move focus back to  prior content &mdash; either by swiping to return or by informing the user of the method needed to return. These methods must work with assistive technology. Explore by touch is not a valid solution, because the user can then miss content without knowing it was missed. This success criterion is similar to WCAG 2.1.2 No Keyboard Trap, however, it expands to all sequential navigation methods and compensates for touch specific failure criteria.  Relying on touch-to-explore features of mobile ATs to escape such a trap is still a failure under this criteria, because the next sequential item may be offscreen, an explore by touch gesture may cause users to get lost on the page, or the user may be relying on other means of sequential navigation such as a keyboard or switch control.</p>
 <h5 class="benefit">Specific Benefits of Success Criterion 2.5.2</h5>
 <ul>
 <li>Content that is after or outside of infinite scrolling content, or off the visible screen, can be accessed by screenreader users.</li>
