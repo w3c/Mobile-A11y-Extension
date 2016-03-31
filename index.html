@@ -362,20 +362,35 @@ All functions available by touch when the platform assistive technology is not t
 </section>   
 </section>
 <section class="sc">
-  <h4 id="tap-press-revocable"><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Single Taps and Long Presses   Revocable: When the device-based assistive technology (e.g screenreader) is being used, then the selection gesture must be separate from than the activation gesture; have have confirmation; or be easily reversable. (Level A)
+  <h4 id="tap-press-revocable"><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Independent Activation: The activation gesture has one or more of the following characteristics: (Level A)
     <section class="understanding">
     </section>
   </h4>
+  <h4>
+    <ol>
+      <li>is separate from the focus gesture, </li>
+      <li>provides confirmation, </li>
+      <li>is reversible, or</li>
+      <li>a mechanism is available to activate functionality independently from focus.</li>
+    </ol>
+  </h4>
+  <p>&nbsp;</p>
   <section class="understanding">
   <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
-  <p class="proposed">People with various disabilities can inadvertently initiate a touch event with unwanted results. Authors can reduce this problem by making the behavior more intentional, such as providing a confirmation alert when the event is distructive or causes signicant changes, or allowing the user to slide away from the button or touch object before lifting their finger, thereby canceling the event. </p>
+  <p>People with various disabilities can inadvertently initiate a touch event with unwanted results. Authors can reduce this problem by making the behavior more intentional, such as providing a confirmation alert when the event is destructive or causes significant changes, or allowing the user to slide away from the button or touch object before lifting their finger, thereby canceling the event. </p>
   <h5 class="benefit">Specific Benefits of Success Criterion 2.5.3</h5>
   <ul>
-  <li>&nbsp;</li>
+  <li>
+    Makes interactive content predictable for all users</li>
+    <li>Helps people with visual disabilities, cognitive limitations, and motor impairments by reducing the chance that a control will be accidentally activated or action will occur unexpectedly.</li>
+    <li>Individuals who are unable to detect changes of context are less likely to become disoriented while navigating a site </li>
   </ul>
   <h5 class="examples">Examples of Success Criterion 2.5.3</h5>
   <ul>
-  <li>A user using the device screenreader is using a phone dialer. With the screenreader turned on, they use their finger to browse the screen, while the screenreader reads out the number. The user lifts their finger, and the dialer overrides the standard behavior of the operating system by dialing the number. </li>
+  <li>
+    Interface elements that require a single tap or a long press as input will only trigger the corresponding event when the finger is lifted inside that element.
+  </li>
+  <li>The user interface control performs an action on touch end rather than when the focus gets on the control. </li>
   </ul>
   <h5 class="resources">Related Resources</h5>
   <p>Resources are for information purposes only, no endorsement implied.</p>
@@ -384,6 +399,7 @@ All functions available by touch when the platform assistive technology is not t
     <ul>
       <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M029">M029</a> Touch events are only triggered when touch is removed from a control</li>
       <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM001">FM001</a> Failure of SC 2.5.3 due to activating a button on initial touch location rather than the final touch location</li>
+      <li>Failure: Actions are only available through long press or 3D touch</li>
     </ul>
   </section>
 </section>
