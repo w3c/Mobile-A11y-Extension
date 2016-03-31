@@ -79,7 +79,7 @@
 	.proposed {background-color:#FFFFCC}
 	</style>
   </head>
-  <body>
+  <body link="#0563c1" dir="ltr" lang="en-US">
     <section id='abstract'>
       <p>
         The Mobile Accessibility Extension to WCAG 2.0 provides new guidelines, success criteria, and mobile Techniques that are an addition to Web Content Accessibility Guidelines (WCAG) 2.0. This extension does not replace WCAG 2.0. </p>
@@ -384,7 +384,7 @@ All functions available by touch when the platform assistive technology is not t
     <ul>
       <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M029">M029</a> Touch events are only triggered when touch is removed from a control</li>
       <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM001">FM001</a> Failure of SC 2.5.3 due to activating a button on initial touch location rather than the final touch location</li>
-      </ul>
+    </ul>
   </section>
 </section>
 <section class="sc">    
@@ -395,25 +395,39 @@ All functions available by touch when the platform assistive technology is not t
   <section class="understanding">
   <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> 
     Intent of this Success Criterion</h5>
-  <p>&nbsp;</p>
-  <h5 class="benefit">Specific Benefits of Success Criterion 2.5.4</h5>
+  <p>Touch screens are a primary method of user input on mobile devices.  User interface controls must be big enough to capture finger touch actions.  The minimum recommended touch target size is 44px by 44px, but a larger touch target is recommended to reduce the possibility of unintentional actions if any of the following are true:
   <ul>
-  <li>&nbsp;</li>
-  </ul>
-  <h5 class="examples">Examples of Success Criterion 2.5.4</h5>
-  <ul>
-  <li>Example 1</li>
-  </ul>
-  <h5 class="resources">Related Resources</h5>
-  <p>Resources are for information purposes only, no endorsement implied.</p>
-  <p>(none currently documented)</p>
-  <h5 class="techniques">Techniques and Failures for Success Criterion 2.5.4</h5>
+  <li>the control is used frequently;
+  <li>the result of the touch cannot be easily undone;
+  <li>the control is positioned where it will be difficult to reach, or is near the edge of the screen;   
+  <li> the control is part of a sequential task.
+    
+    <h5 class="benefit">Specific Benefits of Success Criterion 2.5.4</h5>
+    <ul>
+      <li>Users with mobility impairments, such as hand tremors</li>
+      <li>Users who find fine motor movements difficult        </li>
+      <li>Users who access a device using one hand        </li>
+      <li>Users with large fingers </li>
+    </ul>
+    <h5 class="examples">Examples of Success Criterion 2.5.4</h5>
+    <ul>
+      <li>Three buttons are on-screen and the visible portion of each button is 44px by 44px</li>
+    </ul>
+    <h5 class="resources">Related Resources</h5>
+    <ul>
+      <li>Apple touch target size recommendations</li>   
+	<li>Android touch target size recommendations</li>
+      <li><a href="http://touchlab.mit.edu/publications/2003_009.pdf">Human  	Fingertips to Investigate the Mechanics of Tactile Sense</a>&nbsp;(PDF)</li>
+      <li><a href="http://hcil.cs.umd.edu/trs/2006-11/2006-11.htm">One-Handed  Thumb Use on Small Touchscreen Devices</a>&nbsp;</li>
+      <li><a href="http://blogs.msdn.com/b/ie/archive/2012/04/20/guidelines-for-building-touch-friendly-sites.aspx">Microsoft  Guidelines for Building Touch Friendly Sites</a>
+    </ul>
+<h5 class="techniques">Techniques and Failures for Success Criterion 2.5.4</h5>
     <ul>
       <li><strong><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M030">M030</a> Multiple Elements: </strong>When multiple   elements perform the same action or go to the same destination (e.g.   link icon with link text), these should be contained within the same   actionable element. This increases the touch target size for all users   and benefits people with dexterity impairments. It also reduces the   number of redundant focus targets, which benefits people using screen   readers and keyboard/switch control.</li>
       <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M002">M002</a> <strong>Touch Target</strong>: Ensuring that touch targets are at least 44px by 44px. </li>
       <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM004">FM004</a>  Failure: touch target is less than 44px x 44px</li>
       <li><a href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM005">FM005</a>  Failure: touch target is less than 44px x 44px at the default viewport size</li>
-      </ul>
+    </ul>
   </section>
  </section>
 </section>
