@@ -284,17 +284,17 @@
     <h3 id="touch-and-pointer"> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </h3>
     <section class="understanding introductory">
     <h4>Intent of Guideline 2.5</h4>
-    <p><span class="proposed">[Proposed text for Understanding] </span>Some devices such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  </p>
+    <p><span class="proposed">[Proposed text for Understanding] </span>Some devices such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  This section also refers to pointer events on non-mobile platforms.</p>
     <p>
 Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). </p>
     </section>
     <section class="sc">
-    <h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Touch: All functions available by touch are still available by touch after platform assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
+    <h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Touch with Assistive Technology: All functions available by touch are still available by touch after platform assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
     <section class="understanding">
       <h5><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
       <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with platform assistive technology.  
-Some assistive technology such as a screen reader will change the gestures that are used to interact with content when it is turned on.   For example, on both iOS and Android platforms a single tap on the touch screen will activate the element that currently has focus.  When the system screen reader is turned on, a single tap will move focus to that element and a double tap will activate the element.
-All functions available by touch when the platform assistive technology is not turn on must be still available when the platform assistive technology is turned on.</p>
+Some assistive technology such as a screen reader will change the gestures that are used to interact with content when it is turned on.   For example, on both iOS and Android platforms a a single swipe on the touch screen will activate the element that currently has focus.  When the system screen reader is turned on, a single tap will move focus to that element and a double tap will activate the element.
+All functions available by touch when the platform assistive technology is not turned on must be still available when the platform assistive technology is turned on.</p>
       <p>Be famililar with your platform's system controls and standards for assistive technology. Use the system controls supported by the platform first and don't overwrite the standard gestures of the platform. Don't use a common gesture for a purpose that is not common. </p>
       <h5>Specific Benefits of Success Criterion 2.5.1</h5>
       <ul>
@@ -338,7 +338,7 @@ All functions available by touch when the platform assistive technology is not t
   </section>
   </section>
 <section class="sc">
-    <h4 id="swipe-trap"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  No Touch Trap: When touch input behavior is modified by platform assistive technology and focus can be moved to a component, then focus can be moved away from component using sequential navigation gestures of assistive technology or the user is advised of the method for moving focus away in the sequential focus order. (Level A) </h4>
+  <h4 id="swipe-trap"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  No Touch Trap: When touch input behavior is modified by platform assistive technology and focus can be moved to a component, then focus can be moved away from the component using sequential navigation gestures of assistive technology or the user is advised of the method for moving focus away in the sequential focus order. (Level A) </h4>
 <section class="understanding">
 <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
 <p>Swipe gestures are useful for displaying dynamic content. Giving focus to dynamic content via a swipe gesture also needs a gesture or method to move focus back to  prior content &mdash; either by swiping to return or by informing the user of the method needed to return. These methods must work with assistive technology. Explore by touch is not a valid solution, because the user can then miss content without knowing it was missed. This success criterion is similar to WCAG 2.1.2 No Keyboard Trap, however, it expands to all sequential navigation methods and compensates for touch specific failure criteria.  Relying on touch-to-explore features of mobile ATs to escape such a trap is still a failure under this criteria, because the next sequential item may be offscreen, an explore by touch gesture may cause users to get lost on the page, or the user may be relying on other means of sequential navigation such as a keyboard or switch control.</p>
@@ -348,7 +348,7 @@ All functions available by touch when the platform assistive technology is not t
 </ul>
 <h5 class="examples">Examples of Success Criterion 2.5.2</h5>
 <ul>
-  <li>Infinite scroll of content, where there is additional content in the footer, but the user with assistive technology (e.g. screenreader) cannot move focus to the footer and therefore cannot read the footer content and may not even know that the footer content exists. . </li>
+  <li>Infinite scroll of content, where there is additional content in the footer, but the user with assistive technology (e.g. screenreader) cannot move focus to the footer and therefore cannot read the footer content and may not even know that the footer content exists. </li>
   <li>An infinite carousel advances with a swipe gesture. The instructions indicate that a touch outside the carousel will exit the carousel. The user can touch outside the carousel with assistive technology (e.g. screenreader) turned on.</li>
   <li>Popup dialog that cannot be closed when assistive technology is turned on. </li>
 </ul>
