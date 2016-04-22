@@ -284,9 +284,10 @@
     <h3 id="touch-and-pointer"> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </h3>
     <section class="understanding introductory">
     <h4>Intent of Guideline 2.5</h4>
-    <p><span class="proposed">[Proposed text for Understanding] </span>Some devices such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  This section also refers to pointer events on non-mobile platforms.</p>
+    <p><span class="proposed">[Proposed text for Understanding] </span>Some devices such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  Other devices can be operated by a number of different devices, such as a pen, stylus, or mouse, which may be generically referred to as a <a href="#def-pointer">pointer</a>. This section also applies to pointer events on non-mobile platforms.</p>
     <p>
-Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). </p>
+Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). Pointer devices such as stylus, pen or pencil have also gained popularity for providing more precise touch. The mouse has been popular on desktop computers for decades. </p>
+    <p>Except where specifically noted, touch is assumed to also include pointer devices. </p>
     </section>
     <section class="sc">
     <h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Touch with Assistive Technology: All functions available by touch are still available by touch after platform assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
@@ -650,6 +651,8 @@ All functions available by touch when the platform assistive technology is not t
   separately. </dd>
 <dt id-"def-platform-assistive-technology"><dfn>platform assistive technology</dfn> </dt>
   <dd>Platform assistive technology is built into the operating system and is generally updated through OS updates. Examples include VoiceOver on iOS and TalkBack on Android. </dd>
+  <dt><dfn>pointer</dfn></dt>
+  <dd>A pointer is a hardware-agnostic representation of input devices that can target a specific coordinate (or set of coordinates) on a screen. [Pointer Events] https://www.w3.org/TR/pointerevents/#dfn-pointer</dd>
   <dt id="def-touch-target"><dfn>touch target</dfn></dt>
   <dd>Region of the display that will accept a touch action. If a portion of a touch target is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.</dd>
   <dt><dfn>touchend</dfn></dt> 
