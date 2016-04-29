@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" typeof="bibo:Document " prefix="bibo: http://purl.org/ontology/bibo/ w3p: http://www.w3.org/2001/02pd/rec54#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta lang="" property="dc:language" content="en">
+<html lang="en" dir="ltr" typeof="bibo:Document " prefix="bibo: http://purl.org/ontology/bibo/ w3p: http://www.w3.org/2001/02pd/rec54#">
+<head><meta lang="" property="dc:language" content="en">
     <title>Mobile Accessibility WCAG Extension</title>
-    
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>/* --- ISSUES/NOTES --- */
 div.issue-title, div.note-title , div.ednote-title, div.warning-title {
@@ -67,8 +68,8 @@ input.task-list-item-checkbox {
     margin: 0 0.35em 0.25em -1.6em;
     vertical-align: middle;
 }
-</style><link rel="stylesheet" type="text/css" href="./touch_files/W3C-WD">
-    <link rel="stylesheet" type="text/css" href="./touch_files/additional.css">
+</style><link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/W3C-WD">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/TR/WCAG20/additional.css">
     
     
     <style>
@@ -193,7 +194,7 @@ table.simple {
         display: none;
     }
 }
-</style><link rel="stylesheet" href="./touch_files/W3C-ED"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--><script id="initialUserConfig" type="application/json">{
+</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--><script id="initialUserConfig" type="application/json">{
   "specStatus": "ED",
   "shortName": "mobile-accessibility-extension",
   "edDraftURI": "http://w3c.github.io/Mobile-A11y-Extension/",
@@ -217,16 +218,15 @@ table.simple {
   "wgPatentURI": "http://www.w3.org/2004/01/pp-impl/35422/status",
   "maxTocLevel": 2
 }</script></head>
-  <body link="#0563c1" dir="ltr" lang="en-US" screen_capture_injected="true" class="h-entry toc-sidebar" role="document" id="respecDocument"><p id="toc-nav">
-  <a id="toc-jump" #toc"><span aria-hidden="true">↑</span> <span>Jump to Table of Contents</span></a><a id="toc-toggle" href="#toc"><span aria-hidden="true">←</span> <span>Collapse Sidebar</span></a></p><div class="head" role="contentinfo" id="respecHeader">
+  <body link="#0563c1" dir="ltr" lang="en-US" screen_capture_injected="true" class="h-entry" role="document" id="respecDocument"><div class="head" role="contentinfo" id="respecHeader">
   <p>
-            <a class="logo" href="http://www.w3.org/"><img width="72" height="48" src="./touch_files/W3C" alt="W3C"></a>
+            <a class="logo" href="http://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
   </p>
-  <h1 class="title p-name" id="title" property="dcterms:title">Touch and Pointer: Mobile Accessibility WCAG Extension</h1>
+  <h1 class="title p-name" id="title" property="dcterms:title">Mobile Accessibility WCAG Extension</h1>
   <h2 id="w3c-editor-s-draft-29-april-2016"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2016-04-29">29 April 2016</time></h2>
   <dl>
       <dt>This version:</dt>
-      <dd><a class="u-url" href="http://w3c.github.io/Mobile-A11y-Extension/">http://w3c.github.io/Mobile-A11y-Extension/</a></dd>
+      <dd><a class="u-url" href="http://w3c.github.io/Mobile-A11y-Extension/touch.html">http://w3c.github.io/Mobile-A11y-Extension/touch.html</a></dd>
       <dt>Latest published version:</dt>
       <dd>N/A</dd>
       <dt>Latest editor's draft:</dt>
@@ -263,7 +263,7 @@ table.simple {
 </div>
     <section id="abstract" class="introductory" property="dc:abstract"><h2 id="h-abstract" resource="#h-abstract"><span property="xhv:role" resource="xhv:heading">Abstract</span></h2>
       <p>
-        The Mobile Accessibility Extension to WCAG 2.0 provides new guidelines, success criteria, and mobile Techniques that are an addition to Web Content Accessibility Guidelines (WCAG) 2.0. This document, the Touch and Pointer Guideline, is a subset of the Mobile Accessibility Extension.  This extension does not replace WCAG 2.0. </p>
+        The Mobile Accessibility Extension to WCAG 2.0 provides new guidelines, success criteria, and mobile Techniques that are an addition to Web Content Accessibility Guidelines (WCAG) 2.0. This Touch and Pointer Guideline is a subset of the Mobile Accessibility Extension, composed of only the Touch and Pointer Guideline, its success criteria and Understanding document entries. This extension does not replace WCAG 2.0. </p>
     </section><section id="sotd" class="introductory"><h2 id="h-sotd" resource="#h-sotd"><span property="xhv:role" resource="xhv:heading">Status of This Document</span></h2>
         <p>
           <em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at http://www.w3.org/TR/.</em>
@@ -272,19 +272,20 @@ table.simple {
     <h2 id="status">Status</h2>
       <p><strong>This document is the internal working draft used by the Mobile Accessibility Task Force and is updated continuously and without notice. This is a draft document and may be updated, replaced or   obsoleted by other documents at any time. It is inappropriate to cite   this document as other than work in progress.</strong>
       </p>
-      <p>This is the Touch and Pointer Guideline of a document that may become a First Public Working Draft (FPWD) of the WCAG Extension on Mobile Accessibility. This document catalogs new mobile guidelines, success criteria and techniques proposed by the Mobile A11y Task Force of the WCAG Working Group. . </p>
-      <p>This document is intended to become a normative extension of <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guideline (WCAG 2.0)</a> [<cite><a class="bibref" href="file:///C:/Users/jeanne-w3c/Downloads/index.html#bib-WCAG20">WCAG20</a></cite>] and is part of a series of technical and educational documents published by the <a href="http://www.w3.org/WAI/"><abbr title="World Wide Web Consortium">W3C</abbr> Web Accessibility Initiative (WAI)</a>. </p>
-
-    
-          <p>
-            This document was published by the <a href="http://www.w3.org/WAI/GL/mobile-a11y-tf/">Mobile Accessibililty Task Force</a> as an Editor's Draft.
+      <p>This is a draft of the Touch and Pointer Guideline of what may become the First Public Working Draft (FPWD) of the WCAG Extension on Mobile Accessibility. This document catalogs new mobile guideline on Touch and Pointer, its success criteria, Understanding entries, and Techniques proposed by the Mobile A11y Task Force of the WCAG Working Group. The full <a href="https://w3c.github.io/Mobile-A11y-Extension/">Editor's Draft of the WCAG Extension on Mobile Accessibility</a> is available for those who wish an overview of the Mobile Accessibility Task Force plans for the full Extension. </p>
+      <p>When complete, this document is intended to become a normative extension of <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guideline (WCAG 2.0)</a> [<cite><a class="bibref" href="#bib-WCAG20">WCAG20</a></cite>] and is part of a series of technical and educational documents published by the <a href="http://www.w3.org/WAI/"><abbr title="World Wide Web Consortium">W3C</abbr> Web Accessibility Initiative (WAI)</a>. </p>
+      <p>The Mobile Accessibility Task Force would particularly appreciate feedback on: </p>
+      <ol>
+        <li>Success Criteria 2.5.4 Target Size. Is it appropriate to have two different sizes for touch vs. pointer? Are the minimum sizes being proposed sufficient for people with dexterity or fine motor coordination disabilities? </li>
+      </ol>
+<p>
+    This document was published by the <a href="http://www.w3.org/WAI/GL/mobile-a11y-tf/">Mobile Accessibililty Task Force</a> as an Editor's Draft.
               If you wish to make comments regarding this document, please send them to
-              <a href="mailto:public-mobile-a11y-tf@w3.org">public-mobile-a11y-tf@w3.org</a>
-              (<a href="mailto:public-mobile-a11y-tf-request@w3.org?subject=subscribe">subscribe</a>,
-              <a href="http://lists.w3.org/Archives/Public/public-mobile-a11y-tf/">archives</a>).
+      <a href="mailto:public-mobile-a11y-tf@w3.org">public-mobile-a11y-tf@w3.org</a>
+      (<a href="mailto:public-mobile-a11y-tf-request@w3.org?subject=subscribe">subscribe</a>,
+      <a href="http://lists.w3.org/Archives/Public/public-mobile-a11y-tf/">archives</a>) or create a Github issue at <a href="https://github.com/w3c/Mobile-A11y-Extension/issues">https://github.com/w3c/Mobile-A11y-Extension/issues</a>.
             
-              All comments are welcome.
-          </p>
+          All comments are welcome. </p>
             <p>
               Publication as an Editor's Draft does not imply endorsement by the <abbr title="World Wide Web Consortium">W3C</abbr>
               Membership. This is a draft document and may be updated, replaced or obsoleted by other
@@ -311,7 +312,22 @@ table.simple {
             <p>This document is governed by the <a id="w3c_process_revision" href="http://www.w3.org/2015/Process-20150901/">1 September 2015 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
             </p>
           
-</section><nav id="toc"><h2 class="introductory" id="table-of-contents" resource="#table-of-contents"><span property="xhv:role" resource="xhv:heading">Table of Contents</span></h2><ul class="toc" role="directory"><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#perceivable" class="tocxref"><span class="secno">1. </span>WCAG Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.</a><ul class="toc"></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#operable" class="tocxref"><span class="secno">2. </span>WCAG Principle 2: Operable - User interface components and navigation must be operable.</a><ul class="toc"><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#wcag-guideline-2.1-keyboard-accessible-make-all-functionality-available-from-a-keyboard.x" class="tocxref"><span class="secno">2.1 </span>WCAG Guideline 2.1 Keyboard Accessible:         Make all functionality available from a keyboard. </a><ul class="toc"></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#wcag-guideline-2.2-enough-time-provide-users-enough-time-to-read-and-use-content.x" class="tocxref"><span class="secno">2.2 </span>WCAG Guideline 2.2 Enough Time:         Provide users enough time to read and use content. </a><ul class="toc"></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#wcag-guideline-2.3-seizures-do-not-design-content-in-a-way-that-is-known-to-cause-seizures.x" class="tocxref"><span class="secno">2.3 </span><span id="seizure" class="formerLink"> </span> WCAG Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.</a><ul class="toc"></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#wcag-guideline-2.4-navigable-provide-ways-to-help-users-navigate-find-content-and-determine-where-they-are.x" class="tocxref"><span class="secno">2.4 </span><span id="navigation-mechanisms" class="formerLink"> </span> WCAG Guideline 2.4 Navigable:         Provide ways to help users navigate, find content, and determine where they are. </a><ul class="toc"></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#touch-and-pointer" class="tocxref"><span class="secno">2.5 </span> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </a><ul class="toc"></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#touch-and-pointer" class="tocxref"><span class="secno">2.6 </span> <span class="proposed">[Proposed New MOBILE Guideline]</span> Guideline 2.6: Make it easier to use the physical features of the phone. </a><ul class="toc"></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#proposed-new-mobile-guideline-guideline-2.7-make-it-practical-for-speech-input-users-to-operate-all-functionality" class="tocxref"><span class="secno">2.7 </span><span class="proposed">[Proposed New MOBILE Guideline]</span> Guideline 2.7: Make it practical for speech input users to operate all functionality</a><ul class="toc"></ul></li></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#understandable" class="tocxref"><span class="secno">3. </span>Principle 3: Understandable - Information and the operation of user interface must be understandable.</a><ul class="toc"><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#wcag-guideline-3.1-readable-make-text-content-readable-and-understandable.x" class="tocxref"><span class="secno">3.1 </span>WCAG Guideline 3.1 Readable:         Make text content readable and understandable. </a></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#wcag-guideline-3.2-predictable-make-web-pages-appear-and-operate-in-predictable-ways.x" class="tocxref"><span class="secno">3.2 </span>WCAG Guideline 3.2 Predictable:         Make Web pages appear and operate in predictable ways. </a></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#wcag-guideline-3.3-input-assistance-help-users-avoid-and-correct-mistakes.x" class="tocxref"><span class="secno">3.3 </span>WCAG Guideline 3.3 Input Assistance:         Help users avoid and correct mistakes. </a></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#proposed-new-mobile-guideline-guideline-3.4-make-content-usable-in-device-orientations.-mobile" class="tocxref"><span class="secno">3.4 </span> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.4 Make content usable in  device orientations.[MOBILE] </a></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#proposed-new-mobile-guideline-guideline-3.5-make-interactive-elements-distinguishable" class="tocxref"><span class="secno">3.5 </span><span id="distinguishable" class="formerLink"> </span> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.5 Make interactive elements distinguishable  </a></li></ul></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#robust" class="tocxref"><span class="secno">4. </span>Principle 4: Robust - Content must be robust   enough that it can be interpreted reliably by a wide variety of user   agents, including assistive technologies.</a></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#techniques-with-no-home" class="tocxref"><span class="secno">5. </span>Techniques with No Home</a></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#glossary" class="tocxref"><span class="secno">A. </span>Glossary</a></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#acknowledgements" class="tocxref"><span class="secno">B. </span>Acknowledgements</a></li><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#references" class="tocxref"><span class="secno">C. </span>References</a><ul class="toc"><li class="tocline"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#informative-references" class="tocxref"><span class="secno">C.1 </span>Informative references</a></li></ul></li></ul></nav>
+</section><nav id="toc"><h2 class="introductory" id="table-of-contents" resource="#table-of-contents"><span property="xhv:role" resource="xhv:heading">Table of Contents</span></h2><ul class="toc" role="directory"><li class="tocline">
+  <ul class="toc">
+  </ul>
+</li>
+  <li class="tocline"><ul class="toc"><li class="tocline"><a href="#touch-and-pointer" class="tocxref"><span class="secno">2.5 </span> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </a><ul class="toc">
+    <a href="#glossary" class="tocxref"><span class="secno">A. </span>Glossary</a>
+  </ul>
+  </li></ul></li>
+  <li class="tocline"><a href="#acknowledgements" class="tocxref"><span class="secno">B. </span>Acknowledgements</a></li>
+  <li class="tocline"><a href="#references" class="tocxref"><span class="secno">C. </span>References</a>
+    <ul class="toc">
+      <li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">C.1 </span>Informative references</a></li>
+    </ul>
+  </li>
+</ul>
+</nav>
     
     
     
@@ -319,193 +335,18 @@ table.simple {
       <h2 id="intro" resource="#intro"><span property="xhv:role" resource="xhv:heading">Introduction</span></h2>
       <p>The Mobile Accessibility Extension to WCAG 2.0 provides guidance to improve accessibility for people with disabilities. While it generally applies to traditional mobile devices, it also applies to touch-enabled desktop devices, kiosks, tablets and other platforms that use technology beyond the traditional mouse and keyboard. While it is primarily oriented toward web and hybrid content, the guidelines and success criteria may also apply to native mobile applications. </p>
       <h3 id="structure-of-this-document">Structure of this Document</h3>
-      <p>This version of the Mobile Accessibility Extension to WCAG is closely tied with WCAG. The early work of the task force focused on writing Techniques for WCAG that applied to mobile. Many existing WCAG techniques apply to mobile in current form and are listed in the Appendix of the <abbr title="World Wide Web Consortium">W3C</abbr> Working Group Note: <a href="https://www.w3.org/TR/mobile-accessibility-mapping/#wcag-techniques-that-apply-to-mobile">Mobile Accessibility: How WCAG 2.0 and Other <abbr title="World Wide Web Consortium">W3C</abbr>/WAI Guidelines Apply to Mobile</a>. The task force has written new Techniques for <strong>existing</strong> WCAG success criteria that specifically apply to mobile devices.  To make it easier to understand the relationship between these new mobile Techniques and WCAG, a bare outline of the WCAG success criteria is included, with the appropriate Mobile Techniques listed below the success criterion. Techniques that are proposed but not written are marked as<strong> [Mobile]</strong>. Completed or in process mobile Techniques are numbered starting with the letter "<strong>M</strong>". </p>
-      <p>New guidelines and success criteria that are not in WCAG 2.0 at the time of publication are marked as <strong>[MOBILE]</strong>. WCAG Guidelines and success criteria are prefixed with <strong>WCAG</strong>. </p>
+      <p>This version of the Mobile Accessibility Extension to WCAG is closely tied with WCAG. The early work of the task force focused on writing Techniques for WCAG that applied to mobile. Many existing WCAG techniques apply to mobile in current form and are listed in the Appendix of the <abbr title="World Wide Web Consortium">W3C</abbr> Working Group Note: <a href="https://www.w3.org/TR/mobile-accessibility-mapping/#wcag-techniques-that-apply-to-mobile">Mobile Accessibility: How WCAG 2.0 and Other <abbr title="World Wide Web Consortium">W3C</abbr>/WAI Guidelines Apply to Mobile</a>.      </p>
+      <p>New guidelines and success criteria that are not in WCAG 2.0  are marked as <strong>[MOBILE]</strong>. For convenience of discussion, the proposed Touch and Pointer Guideline has been tentatively numbered as 2.5, since the Task Force proposes it belongs with WCAG Principle 2: Operable. </p>
     </section>
     
     <section class="principle" typeof="bibo:Chapter" resource="#perceivable" property="bibo:hasPart">
-      <!--OddPage--><h2 class="principle" id="perceivable" resource="#perceivable"><span property="xhv:role" resource="xhv:heading"><span class="secno">1. </span>WCAG Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.</span></h2>
-     <section class="guideline" typeof="bibo:Chapter" resource="#x1.1.1-non-text-content" property="bibo:hasPart">
-     <div>
-      <h3 id="wcag-guideline-1.1-text-alternatives-provide-text-alternatives-for-any-non-text-content-so-that-it-can-be-changed-into-other-forms-people-need-such-as-large-print-braille-speech-symbols-or-simpler-language.x">WCAG Guideline 1.1 Text Alternatives: Provide text alternatives for any   non-text content so that it can be changed into other forms people need,   such as large print, braille, speech, symbols or simpler language.</h3>
-      </div>
-      <h3 id="x1.1.1-non-text-content" resource="#x1.1.1-non-text-content"><span property="xhv:role" resource="xhv:heading">1.1.1 Non-text Content</span></h3>
-      <p class="proposed">Mobile Technique proposed for WCAG 1.1.1</p>
-      <ul>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M019">M019</a>: Providing media metadata</li>
-      </ul>
-      </section>
-      <section class="guideline" typeof="bibo:Chapter" resource="#x1.2.1-audio-only-and-video-only-prerecorded" property="bibo:hasPart">
-      <div>
-      <h3 id="wcag-guideline-1.2-time-based-media-provide-alternatives-for-time-based-media.x">WCAG Guideline 1.2 Time-based Media: Provide alternatives for time-based media.</h3>
-      </div>
-      <h3 id="x1.2.1-audio-only-and-video-only-prerecorded" resource="#x1.2.1-audio-only-and-video-only-prerecorded"><span property="xhv:role" resource="xhv:heading">1.2.1 Audio-only and Video-only (Prerecorded)</span></h3>
-      <h3 id="x1.2.2-captions-prerecorded">1.2.2 Captions (Prerecorded)</h3>
-      <h4 id="x1.2.3-audio-description-or-media-alternative-prerecorded">1.2.3 Audio Description or Media Alternative (Prerecorded)</h4>
-      <h4 id="x1.2.4-captions-live">1.2.4 Captions (Live)</h4>
-      <h4 id="x1.2.5-audio-description-prerecorded">1.2.5 Audio Description (Prerecorded)</h4>
-      <h4 id="x1.2.6-sign-language-prerecorded">1.2.6 Sign Language (Prerecorded)</h4>
-      <h4 id="x1.2.7-extended-audio-description-prerecorded">1.2.7 Extended Audio Description  (Prerecorded)</h4>
-      <h4 id="x1.2.8-media-alternative-prerecorded">1.2.8 Media Alternative (Prerecorded)</h4>
-      <h4 id="x1.2.9-audio-only-live">1.2.9 Audio-only (Live)</h4>
-      </section>
-      <section class="guideline" typeof="bibo:Chapter" resource="#x1.3.1-info-and-relationships" property="bibo:hasPart">
-      <div>
-        <h3 id="wcag-guideline-1.3-adaptable-create-content-that-can-be-presented-in-different-ways-for-example-simpler-layout-without-losing-information-or-structure.x">WCAG Guideline 1.3 Adaptable: Create content that   can be presented in different ways (for example simpler layout) without   losing information or structure.</h3>
-      </div>
-      <h3 id="x1.3.1-info-and-relationships" resource="#x1.3.1-info-and-relationships"><span property="xhv:role" resource="xhv:heading">1.3.1 Info and Relationships</span></h3>
-      <p class="proposed">Mobile Techniques proposed for WCAG 1.3.1</p>
-      <ul>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M006">M006</a> <strong>Data Type: </strong>Specifying input type for numerical or character data</li>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M008">M008</a><strong> Data Mask:</strong>&nbsp;Set the virtual keyboard to the type of data entry required</li>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M023">M023</a>: Set the HTML virtual keyboard to the type of data entry required.</li>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M024">M024</a>: Set the iOS virtual keyboard to the type of data entry required.</li>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M025">M025</a>: Set the Android virtual keyboard to the type of data entry required.</li>
-      </ul>
-      <h3 id="x1.3.2-meaningful-sequence">1.3.2 Meaningful Sequence</h3>
-      <p class="proposed">Mobile Technique proposed for WCAG 1.3.2</p>
-      <ul>
-        <li>[MOBILE] Changing between device orientations provide correct reading sequence</li>
-      </ul>
-      <h4 id="x1.3.3-sensory-characteristics">1.3.3 Sensory Characteristics</h4>
-      <p class="proposed">Mobile Techniques proposed for WCAG 1.3.3</p>
-      <ul>
-        <li>[MOBILE] Provide instructions to help users know the location of elements on the touch screen</li>
-      </ul>      
-      </section>
-      <section class="guideline" typeof="bibo:Chapter" resource="#x1.4.1-use-of-color" property="bibo:hasPart">   
-      <div>
-        <h3 id="wcag-guideline-1.4-distinguishable-make-it-easier-for-users-to-see-and-hear-content-including-separating-foreground-from-background.x">WCAG Guideline 1.4 Distinguishable:         Make it easier for users to see and hear content including separating foreground from background. </h3>
-      </div>
-      <h3 id="x1.4.1-use-of-color" resource="#x1.4.1-use-of-color"><span property="xhv:role" resource="xhv:heading">1.4.1 Use of Color</span></h3>
-      <h3 id="x1.4.2-audio-control">1.4.2 Audio Control</h3>
-      <h4 id="x1.4.3-contrast-minimum">1.4.3 Contrast (Minimum)</h4>
-      <p class="proposed">Mobile Techniques proposed for WCAG 1.4.3</p>
-      <ul>
-        <li><strong>[MOBILE] Color Contrast: </strong>The default point size   for mobile platforms might be larger than the default point size used   on non-mobile devices. When determining which contrast ratio to follow,   developers should strive to make sure to apply the lessened contrast   ratio only when text is roughly equivalent to 1.2 times bold or 1.5   times (120% bold or 150%) that of the default platform size.&nbsp;</li>
-      </ul>
-      <h4 id="x1.4.4-resize-text">1.4.4 Resize text</h4>
-      <p class="proposed">Mobile Techniques proposed for WCAG 1.4.4</p>
-      <ul>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M013">M013</a>: Providing a way for users to change font size</li>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M021">M021</a>: <strong>Pinch Zoom:</strong> Setting viewport meta setting to allow magnification to 200%</li>
-        <li><strong>[MOBILE] Platform Text Size: </strong>Support for system fonts that follow platform level user preferences for text size to at least 200%.</li>
-        <li><strong>[MOBILE] On-Page Controls: </strong>Provide on-page controls to change the text size.&nbsp;</li>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M016">M016</a>: Providing vertical navigation mechanisms that work without horizontal scrolling on narrow width screens</li>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M018">M018</a>: Ensuring that menu can be zoomed to 200%</li>
-      </ul>
-      <h4 id="x1.4.5-images-of-text">1.4.5 Images of Text</h4>
-      <h4 id="x1.4.6-contrast-enhanced">1.4.6 Contrast (Enhanced)</h4>
-      <h4 id="x1.4.7-low-or-no-background-audio">1.4.7 Low or No Background Audio</h4>
-      <h4 id="x1.4.8-visual-presentation">1.4.8 Visual Presentation</h4>
-      <p class="proposed">Mobile Technique proposed for WCAG 1.4.8</p>
-      <ul>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M009">M009</a>: Adapting the length of link texts to viewport width</li>
-      </ul>
-      <h4 id="x1.4.9-images-of-text-no-exception">1.4.9 Images of Text (No Exception)    </h4>
-    </section>
+      <!--OddPage--><h2 class="principle" id="perceivable" resource="#perceivable"><span property="xhv:role" resource="xhv:heading"><span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </span></h2>
   </section>
-<section class="principle" typeof="bibo:Chapter" resource="#operable" property="bibo:hasPart">
-  <!--OddPage--><h2 class="principle" id="operable" resource="#operable"><span property="xhv:role" resource="xhv:heading"><span class="secno">2. </span>WCAG Principle 2: Operable - User interface components and navigation must be operable.</span></h2>
-    <section class="guideline" id="wcag-guideline-2.1-keyboard-accessible-make-all-functionality-available-from-a-keyboard.x" typeof="bibo:Chapter" resource="#wcag-guideline-2.1-keyboard-accessible-make-all-functionality-available-from-a-keyboard.x" property="bibo:hasPart">
-      <h3 id="h-wcag-guideline-2.1-keyboard-accessible-make-all-functionality-available-from-a-keyboard.x" resource="#h-wcag-guideline-2.1-keyboard-accessible-make-all-functionality-available-from-a-keyboard.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.1 </span>WCAG Guideline 2.1 Keyboard Accessible:         Make all functionality available from a keyboard. </span></h3>
-    <section class="sc" id="x2.1.1-keyboard" typeof="bibo:Chapter" resource="#x2.1.1-keyboard" property="bibo:hasPart">
-    <h4 id="h-x2.1.1-keyboard" resource="#h-x2.1.1-keyboard"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.1.1 </span>2.1.1 Keyboard</span></h4>
-    <p class="proposed">Mobile Techniques proposed for WCAG 2.1.1</p>
-    <ul>
-      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M011">M011</a>: Ensuring that the interface can be used with a physical keyboard</li>
-      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M014">M014</a>: Ensuring that navigation works on different screen sizes</li>
-    </ul>
-    </section>
-    <section class="sc" id="x2.1.2-no-keyboard-trap" typeof="bibo:Chapter" resource="#x2.1.2-no-keyboard-trap" property="bibo:hasPart">
-    <h4 id="h-x2.1.2-no-keyboard-trap" resource="#h-x2.1.2-no-keyboard-trap"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.1.2 </span>2.1.2 No Keyboard Trap</span></h4>
-    </section>
-    <section class="sc" id="x2.1.3-keyboard-no-exception" typeof="bibo:Chapter" resource="#x2.1.3-keyboard-no-exception" property="bibo:hasPart">
-    <h4 id="h-x2.1.3-keyboard-no-exception" resource="#h-x2.1.3-keyboard-no-exception"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.1.3 </span>2.1.3 Keyboard (No Exception)</span></h4>
-      </section>
-  </section>
-      <section class="guideline" id="wcag-guideline-2.2-enough-time-provide-users-enough-time-to-read-and-use-content.x" typeof="bibo:Chapter" resource="#wcag-guideline-2.2-enough-time-provide-users-enough-time-to-read-and-use-content.x" property="bibo:hasPart">
-  
-      <h3 id="h-wcag-guideline-2.2-enough-time-provide-users-enough-time-to-read-and-use-content.x" resource="#h-wcag-guideline-2.2-enough-time-provide-users-enough-time-to-read-and-use-content.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.2 </span>WCAG Guideline 2.2 Enough Time:         Provide users enough time to read and use content. </span></h3>
-   
-    
-    <section class="sc" id="x2.2.1-timing-adjustable" typeof="bibo:Chapter" resource="#x2.2.1-timing-adjustable" property="bibo:hasPart">
-    <h4 id="h-x2.2.1-timing-adjustable" resource="#h-x2.2.1-timing-adjustable"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.2.1 </span>2.2.1 Timing Adjustable</span></h4>
-    </section>
-    <section class="sc" id="x2.2.2-pause-stop-hide" typeof="bibo:Chapter" resource="#x2.2.2-pause-stop-hide" property="bibo:hasPart">
-    <h4 id="h-x2.2.2-pause-stop-hide" resource="#h-x2.2.2-pause-stop-hide"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.2.2 </span>2.2.2 Pause, Stop, Hide</span></h4>
-    </section>
-    <section class="sc" id="x2.2.3-no-timing" typeof="bibo:Chapter" resource="#x2.2.3-no-timing" property="bibo:hasPart">
-    <h4 id="h-x2.2.3-no-timing" resource="#h-x2.2.3-no-timing"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.2.3 </span>2.2.3 No Timing</span></h4>
-    </section>
-    <section class="sc" id="x2.2.4-interruptions" typeof="bibo:Chapter" resource="#x2.2.4-interruptions" property="bibo:hasPart">
-    <h4 id="h-x2.2.4-interruptions" resource="#h-x2.2.4-interruptions"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.2.4 </span>2.2.4 Interruptions</span></h4>
-    </section>
-    <section class="sc" id="x2.2.5-re-authenticating" typeof="bibo:Chapter" resource="#x2.2.5-re-authenticating" property="bibo:hasPart">
-    <h4 id="h-x2.2.5-re-authenticating" resource="#h-x2.2.5-re-authenticating"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.2.5 </span>2.2.5 Re-authenticating</span></h4>
-    </section>
-      </section>
-      <section class="guideline" id="wcag-guideline-2.3-seizures-do-not-design-content-in-a-way-that-is-known-to-cause-seizures.x" typeof="bibo:Chapter" resource="#wcag-guideline-2.3-seizures-do-not-design-content-in-a-way-that-is-known-to-cause-seizures.x" property="bibo:hasPart">
-
-      <h3 id="h-wcag-guideline-2.3-seizures-do-not-design-content-in-a-way-that-is-known-to-cause-seizures.x" resource="#h-wcag-guideline-2.3-seizures-do-not-design-content-in-a-way-that-is-known-to-cause-seizures.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.3 </span><a id="seizure"> </a> WCAG Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.</span></h3>
-
-    <section class="sc" id="x2.3.1-three-flashes-or-below-threshold" typeof="bibo:Chapter" resource="#x2.3.1-three-flashes-or-below-threshold" property="bibo:hasPart">
-    <h4 id="h-x2.3.1-three-flashes-or-below-threshold" resource="#h-x2.3.1-three-flashes-or-below-threshold"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.3.1 </span>2.3.1 Three Flashes or Below Threshold</span></h4>
-    </section>
-    <section class="sc" id="x2.3.2-three-flashes" typeof="bibo:Chapter" resource="#x2.3.2-three-flashes" property="bibo:hasPart">
-    <h4 id="h-x2.3.2-three-flashes" resource="#h-x2.3.2-three-flashes"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.3.2 </span>2.3.2 Three Flashes</span></h4>
-    </section>
-      </section>
-  <section class="guideline" id="wcag-guideline-2.4-navigable-provide-ways-to-help-users-navigate-find-content-and-determine-where-they-are.x" typeof="bibo:Chapter" resource="#wcag-guideline-2.4-navigable-provide-ways-to-help-users-navigate-find-content-and-determine-where-they-are.x" property="bibo:hasPart">
-      <h3 id="h-wcag-guideline-2.4-navigable-provide-ways-to-help-users-navigate-find-content-and-determine-where-they-are.x" resource="#h-wcag-guideline-2.4-navigable-provide-ways-to-help-users-navigate-find-content-and-determine-where-they-are.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4 </span><a id="navigation-mechanisms"> </a> WCAG Guideline 2.4 Navigable:         Provide ways to help users navigate, find content, and determine where they are. </span></h3>
-    <section class="sc" id="x2.4.1-bypass-blocks" typeof="bibo:Chapter" resource="#x2.4.1-bypass-blocks" property="bibo:hasPart">
-    <h4 id="h-x2.4.1-bypass-blocks" resource="#h-x2.4.1-bypass-blocks"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.1 </span>2.4.1 Bypass Blocks</span></h4>
-    </section>
-    <section class="sc" id="x2.4.2-page-titled" typeof="bibo:Chapter" resource="#x2.4.2-page-titled" property="bibo:hasPart">
-    <h4 id="h-x2.4.2-page-titled" resource="#h-x2.4.2-page-titled"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.2 </span>2.4.2 Page Titled</span></h4>
-    </section>
-    <section class="sc" id="x2.4.3-focus-order" typeof="bibo:Chapter" resource="#x2.4.3-focus-order" property="bibo:hasPart">
-    <h4 id="h-x2.4.3-focus-order" resource="#h-x2.4.3-focus-order"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.3 </span>2.4.3 Focus Order</span></h4>
-    </section>
-    <section class="sc" id="x2.4.4-link-purpose-in-context" typeof="bibo:Chapter" resource="#x2.4.4-link-purpose-in-context" property="bibo:hasPart">
-    <h4 id="h-x2.4.4-link-purpose-in-context" resource="#h-x2.4.4-link-purpose-in-context"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.4 </span>2.4.4 Link Purpose (In Context)</span></h4>
-    </section>
-    <section class="sc" id="x2.4.5-multiple-ways" typeof="bibo:Chapter" resource="#x2.4.5-multiple-ways" property="bibo:hasPart">
-    <h4 id="h-x2.4.5-multiple-ways" resource="#h-x2.4.5-multiple-ways"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.5 </span>2.4.5 Multiple Ways</span></h4>
-    <p class="proposed">Mobile Techniques proposed for WCAG 2.4.5</p>
-    <ul>
-      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M012">M012</a>: Including shortcuts to allow users to jump to sections of the page</li>
-    </ul>
-    </section>
-    <section class="sc" id="x2.4.6-headings-and-labels" typeof="bibo:Chapter" resource="#x2.4.6-headings-and-labels" property="bibo:hasPart">
-    <h4 id="h-x2.4.6-headings-and-labels" resource="#h-x2.4.6-headings-and-labels"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.6 </span>2.4.6 Headings and Labels</span></h4>
-    </section>
-    <section class="sc" id="x2.4.7-focus-visible" typeof="bibo:Chapter" resource="#x2.4.7-focus-visible" property="bibo:hasPart">
-    <h4 id="h-x2.4.7-focus-visible" resource="#h-x2.4.7-focus-visible"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.7 </span>2.4.7 Focus Visible</span></h4>
-    <p class="proposed">Mobile Techniques proposed for WCAG 2.4.7</p>
-    <ul>
-      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M001">M001</a> <strong>Touch Focus</strong>: Defining the hover, focus, selected and touch (regular, long) states</li>
-    </ul>
-    </section>
-    <section class="sc" id="x2.4.8-location" typeof="bibo:Chapter" resource="#x2.4.8-location" property="bibo:hasPart">
-    <h4 id="h-x2.4.8-location" resource="#h-x2.4.8-location"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.8 </span>2.4.8 Location</span></h4>
-    <p class="proposed">Mobile Techniques proposed for WCAG 2.4.8</p>
-    <ul>
-      <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M015">M015</a>: Providing a way for users to see what page they are on</li>
-    </ul>
-    </section>
-    <section class="sc" id="x2.4.9-link-purpose-link-only" typeof="bibo:Chapter" resource="#x2.4.9-link-purpose-link-only" property="bibo:hasPart">
-    <h4 id="h-x2.4.9-link-purpose-link-only" resource="#h-x2.4.9-link-purpose-link-only"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.9 </span>2.4.9 Link Purpose (Link Only)</span></h4>
-    </section>
-    <section class="sc" id="x2.4.10-section-headings" typeof="bibo:Chapter" resource="#x2.4.10-section-headings" property="bibo:hasPart">
-    <h4 id="h-x2.4.10-section-headings" resource="#h-x2.4.10-section-headings"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4.10 </span>2.4.10 Section Headings  </span></h4>
-    </section>
-  </section>
-  <section class="guideline" typeof="bibo:Chapter" resource="#touch-and-pointer" property="bibo:hasPart">
-    <h3 id="touch-and-pointer" resource="#touch-and-pointer"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5 </span> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </span></h3>
-    <section class="understanding introductory" typeof="bibo:Chapter" resource="#intent-of-guideline-2.5" property="bibo:hasPart">
-    <h4 id="intent-of-guideline-2.5" resource="#intent-of-guideline-2.5"><span property="xhv:role" resource="xhv:heading">Intent of Guideline 2.5</span></h4>
-    <p><span class="proposed">[Proposed text for Understanding] </span>Platforms today can be operated through a number of different devices including touch, stylus, pen, in addition to mouse and keyboard. Some platforms such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  Other devices can be operated by a number of different devices, such as a pen, stylus, or mouse, which may be generically referred to as a <a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#def-pointer">pointer</a>. This section also applies to pointer events on non-mobile platforms.</p>
+  <section class="principle" typeof="bibo:Chapter" resource="#operable" property="bibo:hasPart">
+    <section class="guideline" typeof="bibo:Chapter" resource="#touch-and-pointer" property="bibo:hasPart">
+      <section class="understanding introductory" typeof="bibo:Chapter" resource="#intent-of-guideline-2.5" property="bibo:hasPart">
+        <h4 id="intent-of-guideline-2.5" resource="#intent-of-guideline-2.5"><span property="xhv:role" resource="xhv:heading">Intent of Guideline 2.5</span></h4>
+    <p><span class="proposed">[Proposed text for Understanding] </span>Platforms today can be operated through a number of different devices including touch, stylus, pen, in addition to mouse and keyboard. Some platforms such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  Other devices can be operated by a number of different devices, such as a pen, stylus, or mouse, which may be generically referred to as a <a href="#def-pointer">pointer</a>. This section also applies to pointer events on non-mobile platforms.</p>
     <p>
 Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). Pointer devices such as stylus, pen or pencil have also gained popularity for providing more precise touch. The mouse has been popular on desktop computers for decades.    </p>
     <p> Although the definition of "pointer" includes touch, we include touch and pointer for clarity.  When we use the term touch, we just mean touch. </p>
@@ -513,7 +354,7 @@ Mobile device design has evolved away from built-in physical keyboards (e.g. fix
     <section class="sc" typeof="bibo:Chapter" resource="#sc-touch-with-AT" property="bibo:hasPart">
     <h4 id="sc-touch-with-AT" class="sc" resource="#sc-touch-with-AT"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5.1 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Touch with Assistive Technology: All functions available by touch are still available by touch after platform assistive technology that remaps touch gestures is turned on.  (Level A)</span></h4>
     <section class="understanding" id="proposed-text-for-understanding-intent-of-this-success-criterion" typeof="bibo:Chapter" resource="#proposed-text-for-understanding-intent-of-this-success-criterion" property="bibo:hasPart">
-      <h5 id="h-proposed-text-for-understanding-intent-of-this-success-criterion" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5.1.1 </span><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</span></h5>
+      <h5 id="h-proposed-text-for-understanding-intent-of-this-success-criterion" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion"><span property="xhv:role" resource="xhv:heading"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</span></h5>
       <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with platform assistive technology.  
 Some assistive technology such as a screen reader will change the gestures that are used to interact with content when it is turned on.   For example, on both iOS and Android platforms a a single swipe on the touch screen will activate the element that currently has focus.  When the system screen reader is turned on, a single tap will move focus to that element and a double tap will activate the element.
 All functions available by touch when the platform assistive technology is not turned on must be still available when the platform assistive technology is turned on.</p>
@@ -537,7 +378,6 @@ All functions available by touch when the platform assistive technology is not t
      <li><a href="http://www.windowsphone.com/en-us/how-to/wp7/start/gestures-flick-pan-and-stretch">Windows Phone: Gestures: flick, pan, and stretch</a></li>
      <li><a href="https://www.microsoft.com/en/mobile/accessibility/use-narrator-on-my-phone/">Microsoft: Use Narrator on my phone</a></li>
      <li><a href="http://downloadcenter.samsung.com/content/UM/201503/20150303094626458/SM-G920F_UM_EU_Lollipop_Eng_Rev.1.0_150302.pdf">Samsung User Manual (pdf)</a></li>
-     <li>[jeanne will check UAAG for links to other mobile platforms - Blackberry]</li>
    </ul>
    <p>&nbsp;</p>
    <p>Resources are for information purposes only, no endorsement implied.</p>
@@ -562,7 +402,7 @@ All functions available by touch when the platform assistive technology is not t
 <section class="sc" typeof="bibo:Chapter" resource="#swipe-trap" property="bibo:hasPart">
   <h4 id="swipe-trap" resource="#swipe-trap"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5.2 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  No Touch Trap: When touch input behavior is modified by platform assistive technology and focus can be moved to a component, then focus can be moved away from the I'component using sequential navigation gestures of assistive technology or the user is advised of the method for moving focus away in the sequential focus order. (Level A) </span></h4>
 <section class="understanding" id="proposed-text-for-understanding-intent-of-this-success-criterion-1" typeof="bibo:Chapter" resource="#proposed-text-for-understanding-intent-of-this-success-criterion-1" property="bibo:hasPart">
-<h5 class="intent" id="h-proposed-text-for-understanding-intent-of-this-success-criterion-1" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion-1"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5.2.1 </span><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</span></h5>
+<h5 class="intent" id="h-proposed-text-for-understanding-intent-of-this-success-criterion-1" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion-1"><span property="xhv:role" resource="xhv:heading"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</span></h5>
 <p>Swipe gestures are useful for displaying dynamic content. Giving focus to dynamic content via a swipe gesture also needs a gesture or method to move focus back to  prior content — either by swiping to return or by informing the user of the method needed to return. These methods must work with assistive technology. Explore by touch is not a valid solution, because the user can then miss content without knowing it was missed. This success criterion is similar to WCAG 2.1.2 No Keyboard Trap, however, it expands to all sequential navigation methods and compensates for touch specific failure criteria.  Relying on touch-to-explore features of mobile ATs to escape such a trap is still a failure under this criteria, because the next sequential item may be offscreen, an explore by touch gesture may cause users to get lost on the page, or the user may be relying on other means of sequential navigation such as a keyboard or switch control.</p>
 <h5 class="benefit" id="specific-benefits-of-success-criterion-2.5.2">Specific Benefits of Success Criterion 2.5.2</h5>
 <ul>
@@ -600,7 +440,7 @@ All functions available by touch when the platform assistive technology is not t
   </h4>
   <p><strong>Note:</strong> This success criteria applies when platform assistive technology (e.g. screen reader) that remaps touch gestures is not turned on.</p>
   <section class="understanding" id="proposed-text-for-understanding-intent-of-this-success-criterion-2" typeof="bibo:Chapter" resource="#proposed-text-for-understanding-intent-of-this-success-criterion-2" property="bibo:hasPart">
-  <h5 class="intent" id="h-proposed-text-for-understanding-intent-of-this-success-criterion-2" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion-2"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5.3.1 </span><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</span></h5>
+  <h5 class="intent" id="h-proposed-text-for-understanding-intent-of-this-success-criterion-2" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion-2"><span property="xhv:role" resource="xhv:heading"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</span></h5>
   <p>People with various disabilities can inadvertently initiate touch or mouse events with unwanted results. Up-Event activation refers to the activation of a component when the trigger stimulus is released. For example, for touchscreen interaction the event would be triggered when a finger is lifted from the touchscreen at the end of a tap.There is a distinction between when someone touches a screen and when they remove their finger. On a mouse there is a difference between mouse down (initiating a click) and mouse up (releasing the finger). Authors can reduce the problem of users inadvertently triggering an action, by making activation on the up-event. This gives users the opportunity to move their finger (or mouse/pointer), away from the wrong target once they hit it. If touch down activation is necessary, there are several options:</p>
   <ul>
     <li> A confirmation alert allows the user to change their mind </li>
@@ -627,19 +467,19 @@ All functions available by touch when the platform assistive technology is not t
   <p>(none currently documented)</p>
   <h5 class="techniques" id="techniques-and-failures-for-success-criterion-2.5.3">Techniques and Failures for Success Criterion 2.5.3</h5>
     <ul>
-      <li><a rel="nofollow" href="https://www.w3.org/WAI/GL/mobile-a11y-tf/wiki/M029">M029</a> <span class="note">@@wiki link@@</span> Touch events are only triggered when touch is removed from a control</li>
+      <li><a rel="nofollow" href="https://www.w3.org/WAI/GL/mobile-a11y-tf/wiki/M029">M029</a> @@wiki link@@ Touch events are only triggered when touch is removed from a control</li>
       <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM001">FM001</a> Failure of SC 2.5.3 due to activating a button on initial touch location rather than the final touch location</li>
       <li>Failure @@to be written@@: Actions are only available through long press or 3D touch</li>
     </ul>
   </section>
 </section>
 <section class="sc" typeof="bibo:Chapter" resource="#touch_target_size" property="bibo:hasPart">    
-  <h4 id="touch_target_size" resource="#touch_target_size"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5.4 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Target Size: The size of the <a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#def-target">target</a> in relation to the visible display at the default viewport size is at least: (Level AA) 
+  <h4 id="touch_target_size" resource="#touch_target_size"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5.4 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Target Size: The size of the <a href="#def-target">target</a> in relation to the visible display at the default viewport size is at least: (Level AA) 
 <ul>
 <li>44px by 44px for touch inputs</li>
 <li>20px by 20px for mouse/pointer inputs</li>
 </ul>
-  where px is a CSS <a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#def-pixel">pixel</a>. </span></h4>
+  where px is a CSS <a href="#def-pixel">pixel</a>. </span></h4>
 <p>Note: In situations where both touch and pointer/mouse input mechanisms are present, without manual or automatic input detection, controls must follow the larger minimum dimensions for touch input.</p>
 <p>Note: This success criteria applies when platform assistive technology (e.g. magnification) is not turned on.</p>
 <p>Editor's Note: We are researching the 20px value for mouse/pointer and 44px for touch. We are seeking research on this and outside input. We also have to define the difference between a touch event and a mouse event, particularly in html and responsive environments.</p>
@@ -648,7 +488,7 @@ All functions available by touch when the platform assistive technology is not t
     </section>
   
   <section class="understanding" id="proposed-text-for-understanding-intent-of-this-success-criterion-3" typeof="bibo:Chapter" resource="#proposed-text-for-understanding-intent-of-this-success-criterion-3" property="bibo:hasPart">
-  <h5 class="intent" id="h-proposed-text-for-understanding-intent-of-this-success-criterion-3" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion-3"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5.4.1 </span><span class="proposed">[Proposed text for Understanding] </span> 
+  <h5 class="intent" id="h-proposed-text-for-understanding-intent-of-this-success-criterion-3" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion-3"><span property="xhv:role" resource="xhv:heading"><span class="proposed">[Proposed text for Understanding] </span> 
     Intent of this Success Criterion</span></h5>
   <p>The intent of this success criteria is to help users who may have trouble activating a small target because of hand tremours, limited dexterity or other reasons. Mice, and pointing devices can be hard to use for these users, and a larger target will help them greatly in having positive outcomes on the web page. If the target is too small, it may be difficult to aim at the target. This can be further complicated on responsive sites that double as mobile content where the same input will be used with touch. A finger is larger than mouse pointer, and needs a larger target. Touch screens are a primary method of user input on mobile devices. User interface controls must be big enough to capture finger touch actions. The minimum recommended touch target size is 44px by 44px, but a larger touch target is recommended to reduce the possibility of unintentional actions. This is particularly, if any of the following are true:
   </p><ul>
@@ -687,193 +527,11 @@ All functions available by touch when the platform assistive technology is not t
  </section>
 </section>
 
-<section class="guideline" typeof="bibo:Chapter" resource="#touch-and-pointer" property="bibo:hasPart">
-    <h3 id="touch-and-pointer" resource="#touch-and-pointer"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.6 </span> <span class="proposed">[Proposed New MOBILE Guideline]</span> Guideline 2.6: Make it easier to use the physical features of the phone. </span></h3>
-  <section class="understanding introductory" typeof="bibo:Chapter" resource="#intent-of-guideline-2.6" property="bibo:hasPart">
-    <h4 id="intent-of-guideline-2.6" resource="#intent-of-guideline-2.6"><span property="xhv:role" resource="xhv:heading">Intent of Guideline 2.6</span></h4>
-    <p><span class="proposed">[Proposed text for Understanding] </span>  </p>
+<section class="guideline" typeof="bibo:Chapter" resource="#touch-and-pointer" property="bibo:hasPart"></section>
   </section>
-  <section class="sc" id="proposed-new-mobile-success-criteria-device-manipulation-when-device-manipulation-gestures-are-provided-touch-and-keyboard-operable-alternative-control-options-are-available.-level-aa" typeof="bibo:Chapter" resource="#proposed-new-mobile-success-criteria-device-manipulation-when-device-manipulation-gestures-are-provided-touch-and-keyboard-operable-alternative-control-options-are-available.-level-aa" property="bibo:hasPart">
-  <h4 id="h-proposed-new-mobile-success-criteria-device-manipulation-when-device-manipulation-gestures-are-provided-touch-and-keyboard-operable-alternative-control-options-are-available.-level-aa" resource="#h-proposed-new-mobile-success-criteria-device-manipulation-when-device-manipulation-gestures-are-provided-touch-and-keyboard-operable-alternative-control-options-are-available.-level-aa"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.6.1 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Device manipulation: When <a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#def-device-manipulation">device   manipulation</a> gestures are provided, touch and keyboard operable   alternative control options are available. (Level AA) </span></h4>
-  <section class="understanding" id="proposed-text-for-understanding-intent-of-this-success-criterion-4" typeof="bibo:Chapter" resource="#proposed-text-for-understanding-intent-of-this-success-criterion-4" property="bibo:hasPart">
-  <h5 class="intent" id="h-proposed-text-for-understanding-intent-of-this-success-criterion-4" resource="#h-proposed-text-for-understanding-intent-of-this-success-criterion-4"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.6.1.1 </span><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</span></h5>
-<p>While device operating system is responsible for providing alternatives for using the device buttons and gestures (e.g. shaking, holding,      proximity, touch, voice, walking,  looking at, angle of      holding, etc.), when the content makes use of these gestures in a customized manner not recognized by the operating system, then touch or keyboard alternatives are provided. For example, a shaking motion to undo or cancel may be unavailable to a person whose mobile device is secured to a wheelchair. </p>
-<h5 class="benefit" id="specific-benefits-of-success-criterion-2.6.1">Specific Benefits of Success Criterion 2.6.1</h5>
-<ul>
-<li>&nbsp;</li>
-</ul>
-<h5 class="examples" id="examples-of-success-criterion-2.6.1">Examples of Success Criterion 2.6.1</h5>
-<ul>
-<li>Example 1</li>
-</ul>
-<h5 class="resources" id="related-resources-4">Related Resources</h5>
-<p>Resources are for information purposes only, no endorsement implied.</p>
-<p>(none currently documented)</p>
-<h5 class="techniques" id="techniques-and-failures-for-success-criterion-2.6.1">Techniques and Failures for Success Criterion 2.6.1</h5>
-<ul>
-  <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M010">M010</a>: Allowing users to interact using device buttons (e.g. arrow keys, ok button)      
-</li> 
-</ul>
+  <section id="techniques-with-no-home" typeof="bibo:Chapter" resource="#techniques-with-no-home" property="bibo:hasPart">
+  <p>&nbsp;</p>
 </section>
-</section>
-<section class="sc" id="proposed-new-mobile-success-criteria-visual-gestures-to-the-camera" typeof="bibo:Chapter" resource="#proposed-new-mobile-success-criteria-visual-gestures-to-the-camera" property="bibo:hasPart">
-<h4 id="h-proposed-new-mobile-success-criteria-visual-gestures-to-the-camera" resource="#h-proposed-new-mobile-success-criteria-visual-gestures-to-the-camera"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.6.2 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Visual gestures to the camera</span></h4>
-</section> 
-<section class="sc" id="proposed-new-mobile-success-criteria-voice-control-using-microphone" typeof="bibo:Chapter" resource="#proposed-new-mobile-success-criteria-voice-control-using-microphone" property="bibo:hasPart">
-<h4 id="h-proposed-new-mobile-success-criteria-voice-control-using-microphone" resource="#h-proposed-new-mobile-success-criteria-voice-control-using-microphone"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.6.3 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Voice control using microphone</span></h4>
-</section>
-</section>
-
-<section class="guideline" id="proposed-new-mobile-guideline-guideline-2.7-make-it-practical-for-speech-input-users-to-operate-all-functionality" typeof="bibo:Chapter" resource="#proposed-new-mobile-guideline-guideline-2.7-make-it-practical-for-speech-input-users-to-operate-all-functionality" property="bibo:hasPart">
-<h3 id="h-proposed-new-mobile-guideline-guideline-2.7-make-it-practical-for-speech-input-users-to-operate-all-functionality" resource="#h-proposed-new-mobile-guideline-guideline-2.7-make-it-practical-for-speech-input-users-to-operate-all-functionality"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.7 </span><span class="proposed">[Proposed New MOBILE Guideline]</span> Guideline 2.7: Make it practical for speech input users to operate all functionality</span></h3>
-<section class="understanding" id="proposed-text-for-understanding" typeof="bibo:Chapter" resource="#proposed-text-for-understanding" property="bibo:hasPart">
-<h4 id="h-proposed-text-for-understanding" resource="#h-proposed-text-for-understanding"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.7.1 </span><span class="proposed">[Proposed text for Understanding] </span></span></h4>
-</section>
-<section class="sc" id="proposed-new-mobile-success-criteria-speech-input-all-functionality-of-the-content-including-touch-and-gesture-is-operable-through-the-keyboard-and-does-not-obstruct-a-user-s-ability-to-access-the-keyboard-commands-through-speech-input.-level-a" typeof="bibo:Chapter" resource="#proposed-new-mobile-success-criteria-speech-input-all-functionality-of-the-content-including-touch-and-gesture-is-operable-through-the-keyboard-and-does-not-obstruct-a-user-s-ability-to-access-the-keyboard-commands-through-speech-input.-level-a" property="bibo:hasPart">
-<h4 id="h-proposed-new-mobile-success-criteria-speech-input-all-functionality-of-the-content-including-touch-and-gesture-is-operable-through-the-keyboard-and-does-not-obstruct-a-user-s-ability-to-access-the-keyboard-commands-through-speech-input.-level-a" resource="#h-proposed-new-mobile-success-criteria-speech-input-all-functionality-of-the-content-including-touch-and-gesture-is-operable-through-the-keyboard-and-does-not-obstruct-a-user-s-ability-to-access-the-keyboard-commands-through-speech-input.-level-a"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.7.2 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Speech Input: All functionality of the content (including touch and gesture) is operable through the keyboard, and does not obstruct a user's ability to access the keyboard commands through speech input. (Level A)</span></h4>
-
-<section class="understanding" typeof="bibo:Chapter" resource="#intent-of-this-success-criterion" property="bibo:hasPart">
-<p><span class="proposed">[Proposed text for Understanding] </span></p>
-<h5 class="intent" id="intent-of-this-success-criterion" resource="#intent-of-this-success-criterion"><span property="xhv:role" resource="xhv:heading">Intent of this Success Criterion</span></h5>
-<p>One means of speech input is speaking keyboard controls. Users can also write custom speech commands that can call keyboard controls. This means that, in general, anything that is accessible by keyboard is accessible by speech.</p>
-<h5 class="benefit" id="specific-benefits-of-success-criterion-2.7.1">Specific Benefits of Success Criterion 2.7.1</h5>
-<ul>
-<li>&nbsp;</li>
-</ul>
-<h5 class="examples" id="examples-of-success-criterion-2.7.1">Examples of Success Criterion 2.7.1</h5>
-<ul>
-<li>Example 1</li>
-</ul>
-<h5 class="resources" id="related-resources-5">Related Resources</h5>
-<p>Resources are for information purposes only, no endorsement implied.</p>
-<p>(none currently documented)</p>
-<h5 class="techniques" id="techniques-and-failures-for-success-criterion-2.7.1">Techniques and Failures for Success Criterion 2.7.1</h5>
-<ul>
-<li>&nbsp;</li>
-</ul>
-</section>
-</section>
-<section class="sc" id="proposed-new-mobile-success-criteria-single-key-shortcut-alternative-the-user-can-adjust-any-single-key-shortcut-to-an-alternative-control-of-a-string-of-symbols-and-letters.x" typeof="bibo:Chapter" resource="#proposed-new-mobile-success-criteria-single-key-shortcut-alternative-the-user-can-adjust-any-single-key-shortcut-to-an-alternative-control-of-a-string-of-symbols-and-letters.x" property="bibo:hasPart">
-<h4 id="h-proposed-new-mobile-success-criteria-single-key-shortcut-alternative-the-user-can-adjust-any-single-key-shortcut-to-an-alternative-control-of-a-string-of-symbols-and-letters.x" resource="#h-proposed-new-mobile-success-criteria-single-key-shortcut-alternative-the-user-can-adjust-any-single-key-shortcut-to-an-alternative-control-of-a-string-of-symbols-and-letters.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.7.3 </span><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Single key shortcut alternative: The user can adjust any single key shortcut to an alternative control of a string of symbols and letters.</span></h4>
-<section class="understanding" typeof="bibo:Chapter" resource="#intent-of-this-success-criterion-1" property="bibo:hasPart">
-<p><span class="proposed">[Proposed text for Understanding] </span></p>
-<h5 class="intent" id="intent-of-this-success-criterion-1" resource="#intent-of-this-success-criterion-1"><span property="xhv:role" resource="xhv:heading">Intent of this Success Criterion</span></h5>
-<p>While using single letter keys as controls might be appropriate and efficient for keyboard users, single key shortcuts are disastrous for speech users, who can inadvertently set off multiple controls by speaking a single phrase. To avoid excluding speech users, single key shortcuts must be accompanied by a mechanism that allows the user to customize single key shortcuts. For example, the user could change the single key shortcut "r" for reply to "+r" or to "This Reply". </p>
-<h5 class="benefit" id="specific-benefits-of-success-criterion-2.7.2">Specific Benefits of Success Criterion 2.7.2</h5>
-<ul>
-<li>&nbsp;</li>
-</ul>
-<h5 class="examples" id="examples-of-success-criterion-2.7.2">Examples of Success Criterion 2.7.2</h5>
-<ul>
-<li>Example 1</li>
-</ul>
-<h5 class="resources" id="related-resources-6">Related Resources</h5>
-<p>Resources are for information purposes only, no endorsement implied.</p>
-<p>(none currently documented)</p>
-<h5 class="techniques" id="techniques-and-failures-for-success-criterion-2.7.2">Techniques and Failures for Success Criterion 2.7.2</h5>
-<ul>
-<li>&nbsp;</li>
-</ul>
-</section>
-</section>
-</section>
-</section>
-<section class="principle" typeof="bibo:Chapter" resource="#understandable" property="bibo:hasPart">
-<!--OddPage--><h2 class="principle" id="understandable" resource="#understandable"><span property="xhv:role" resource="xhv:heading"><span class="secno">3. </span>Principle 3: Understandable - Information and the operation of user interface must be understandable.</span></h2>
-<section class="guideline" id="wcag-guideline-3.1-readable-make-text-content-readable-and-understandable.x" typeof="bibo:Chapter" resource="#wcag-guideline-3.1-readable-make-text-content-readable-and-understandable.x" property="bibo:hasPart">
-    <h3 id="h-wcag-guideline-3.1-readable-make-text-content-readable-and-understandable.x" resource="#h-wcag-guideline-3.1-readable-make-text-content-readable-and-understandable.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">3.1 </span>WCAG Guideline 3.1 Readable:         Make text content readable and understandable. </span></h3>
-
-<h3 id="x3.1.1-language-of-page">3.1.1 Language of Page</h3>
-      <h3 id="x3.1.2-language-of-parts">3.1.2 Language of Parts</h3>
-      <h4 id="x3.1.3-unusual-words">3.1.3 Unusual Words</h4>
-      <h4 id="x3.1.4-abbreviations">3.1.4 Abbreviations</h4>
-      <h4 id="x3.1.5-reading-level">3.1.5 Reading Level</h4>
-      <h4 id="x3.1.6-pronunciation">3.1.6 Pronunciation</h4>
-</section>
-<section class="guideline" id="wcag-guideline-3.2-predictable-make-web-pages-appear-and-operate-in-predictable-ways.x" typeof="bibo:Chapter" resource="#wcag-guideline-3.2-predictable-make-web-pages-appear-and-operate-in-predictable-ways.x" property="bibo:hasPart">
-    <h3 id="h-wcag-guideline-3.2-predictable-make-web-pages-appear-and-operate-in-predictable-ways.x" resource="#h-wcag-guideline-3.2-predictable-make-web-pages-appear-and-operate-in-predictable-ways.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">3.2 </span>WCAG Guideline 3.2 Predictable:         Make Web pages appear and operate in predictable ways. </span></h3>
-
-<h3 id="x3.2.1-on-focus">3.2.1 On Focus</h3>
-      <h3 id="x3.2.2-on-input">3.2.2 On Input</h3>
-      <h4 id="x3.2.3-consistent-navigation">3.2.3 Consistent      Navigation</h4>
-      <ul>
-        <li><strong>[MOBILE] Navigation Bar: </strong>If the navigation bar   is collapsed into a single icon, the entries in the drop-down list that   appear when activating the icon are still in the same relative order as   the full navigation menu.</li>
-        <li><strong>[MOBILE] Orientation  Order: </strong>A Web site, when   viewed on the different screen sizes and in different orientations, has   some components that are hidden or appear in a different order. The   components that show, however, remain consistent for any screen size and   orientation.</li>
-      </ul>
-</section>
-<section class="guideline" id="wcag-guideline-3.3-input-assistance-help-users-avoid-and-correct-mistakes.x" typeof="bibo:Chapter" resource="#wcag-guideline-3.3-input-assistance-help-users-avoid-and-correct-mistakes.x" property="bibo:hasPart">
-    <h3 id="h-wcag-guideline-3.3-input-assistance-help-users-avoid-and-correct-mistakes.x" resource="#h-wcag-guideline-3.3-input-assistance-help-users-avoid-and-correct-mistakes.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">3.3 </span>WCAG Guideline 3.3 Input Assistance:         Help users avoid and correct mistakes. </span></h3>
-  <h3 id="x3.3.1-error-identification">3.3.1 Error Identification</h3>
-      <h3 id="x3.3.2-labels-or-instructions">3.3.2 Labels or Instructions</h3>
-      <p class="proposed">Mobile Technique proposed for WCAG 3.3.2</p>
-      <ul>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M005">M005</a>:   Providing instructions for custom functions and gestures (Instructions   (e.g. overlays, tooltips, tutorials, etc.) should be provided to explain   what gestures can be used to control a given interface and whether   there are alternatives.)</li>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M020">M020</a>: Providing instructions for form data types</li>
-      </ul>
-      <h4 id="x3.3.3-error-suggestion">3.3.3 Error Suggestion</h4>
-      <h4 id="x3.3.4-error-prevention-legal-financial-data">3.3.4 Error Prevention (Legal, Financial, Data)</h4>
-      <h4 id="x3.3.5-help">3.3.5 Help</h4>
-      <h4 id="x3.3.6-error-prevention-all">3.3.6 Error Prevention (All)</h4>
-
- </section>
- <section class="guideline" id="proposed-new-mobile-guideline-guideline-3.4-make-content-usable-in-device-orientations.-mobile" typeof="bibo:Chapter" resource="#proposed-new-mobile-guideline-guideline-3.4-make-content-usable-in-device-orientations.-mobile" property="bibo:hasPart">
-    <h3 id="h-proposed-new-mobile-guideline-guideline-3.4-make-content-usable-in-device-orientations.-mobile" resource="#h-proposed-new-mobile-guideline-guideline-3.4-make-content-usable-in-device-orientations.-mobile"><span property="xhv:role" resource="xhv:heading"><span class="secno">3.4 </span> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.4 Make content usable in  device orientations.[MOBILE] </span></h3>
-
-  <h3 id="x3.4.1-expose-orientation-changes-in-orientation-are-programmatically-exposed-to-ensure-assistive-technology-such-as-screen-readers-know-the-changes-in-layout.-mobile">3.4.1 Expose Orientation: Changes in   orientation are programmatically exposed to ensure  assistive technology   such as screen readers know the changes in layout. [MOBILE]</h3>
-</section>
-<section class="guidelines" id="proposed-new-mobile-guideline-guideline-3.5-make-interactive-elements-distinguishable" typeof="bibo:Chapter" resource="#proposed-new-mobile-guideline-guideline-3.5-make-interactive-elements-distinguishable" property="bibo:hasPart">
-    <h3 id="h-proposed-new-mobile-guideline-guideline-3.5-make-interactive-elements-distinguishable" resource="#h-proposed-new-mobile-guideline-guideline-3.5-make-interactive-elements-distinguishable"><span property="xhv:role" resource="xhv:heading"><span class="secno">3.5 </span><a id="distinguishable"> </a> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.5 Make interactive elements distinguishable  </span></h3>
-
-<h3 id="x3.5.1-triggers-distinguishable-elements-that-trigger-changes-should-be-sufficiently-distinct-to-be-clearly-distinguishable-from-non-actionable-elements-content-status-information-etc-.-mobile">3.5.1 Triggers Distinguishable: Elements   that trigger changes should be sufficiently distinct to be clearly   distinguishable from non-actionable elements (content, status   information, etc). [MOBILE]</h3>
-      <ul>
-        <li>
-          <div><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M004">M004</a>: Providing clear indication that elements are actionable / Design actionable objects to look actionable </div>
-          <ul>
-            <li>
-              <div><strong>Conventional Shape:</strong>&nbsp;Button shape (rounded corners, drop shadows), checkbox, select rectangle with arrow pointing downwards</div>
-            </li>
-            <li>
-              <div><strong>Iconography:</strong>&nbsp;conventional visual icons (question mark, home icon, burger icon for menu, floppy disk for save, back arrow, etc)</div>
-            </li>
-            <li>
-              <div><strong>Color Offset:</strong>&nbsp;shape with different background color to distinguish the element from the page background, different text color</div>
-            </li>
-            <li>
-              <div><strong>Conventional Style:&nbsp;</strong>Underlined text for links, color for links</div>
-            </li>
-            <li>
-              <div><strong>Conventional positioning:</strong>&nbsp;Commonly used   position such as a top left position for back button (iOS), position of   menu items within left-aligned lists in drop-down menus for navigation</div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <p>&nbsp;</p>
-  </section>
-</section>
-    
-<section class="principle" typeof="bibo:Chapter" resource="#robust" property="bibo:hasPart">
-      <!--OddPage--><h2 class="principle" id="robust" resource="#robust"><span property="xhv:role" resource="xhv:heading"><span class="secno">4. </span>Principle 4: Robust - Content must be robust   enough that it can be interpreted reliably by a wide variety of user   agents, including assistive technologies.</span></h2>
-      <div>
-        <h2 id="guideline-4.1-compatible-maximize-compatibility-with-current-and-future-user-agents-including-assistive-technologies.x">Guideline 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.</h2>
-      </div>
-      <h2 id="x4.1.1-parsing">4.1.1 Parsing </h2>
-      <h2 id="x4.1.2-name-role-value">4.1.2 Name, Role, Value</h2>
-      <p class="proposed">Mobile Technique proposed for WCAG 4.1.2</p>
-<ul>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M017">M017</a>: Providing the open/closed state information in the menu icon</li>
-  </ul>
-      <h4 id="proposed-new-mobile-success-criteria-4.1.3-non-interference-of-at-content-does-not-interfere-with-default-functionality-of-platform-level-assistive-technology"><span class="proposed">[Proposed New MOBILE Success Criteria]</span> 4.1.3 Non-interference of AT: Content does   not interfere with default functionality of platform level assistive   technology </h4>
-      <p class="proposed">Mobile Technique proposed for WCAG 4.1.3</p>
-<ul>
-        <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M007">M007</a>: Supporting the characteristic properties of the platform (e.g. zoom, larger font, captions)</li>
-  </ul>
-  </section>
- <section id="techniques-with-no-home" typeof="bibo:Chapter" resource="#techniques-with-no-home" property="bibo:hasPart">
-        <!--OddPage--><h2 class="proposed" id="h-techniques-with-no-home" resource="#h-techniques-with-no-home"><span property="xhv:role" resource="xhv:heading"><span class="secno">5. </span>Techniques with No Home</span></h2>
-
-      <p><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M003">M003</a><strong> Touch Activation:</strong> Activating elements via the touchend event</p>
-      <p>&nbsp;</p>
-  </section>
   <section id="glossary" class="appendix" typeof="bibo:Chapter" resource="#glossary" property="bibo:hasPart">
   <!--OddPage--><h2 id="h-glossary" resource="#h-glossary"><span property="xhv:role" resource="xhv:heading"><span class="secno">A. </span>Glossary</span></h2>
   <dl>
@@ -890,7 +548,7 @@ All functions available by touch when the platform assistive technology is not t
   <dt id="def-target"><dfn data-dfn-type="dfn" id="dfn-target"> target</dfn></dt>
   <dd>Region of the display that will accept a touch action. If a portion of a touch target is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.</dd>
   <dt><dfn data-dfn-type="dfn" id="dfn-touchend">touchend</dfn></dt> 
-  <dd>see "<a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#def-up-event">up event</a>"</dd>
+  <dd>see "<a href="#def-up-event">up event</a>"</dd>
   <dt id="def-up-event"><dfn data-dfn-type="dfn" id="dfn-up-event-touchend-event">up event, touchend event</dfn>
   </dt>
   <dd>The activation of a component when the trigger stimulus is released. Example: For touchscreen interaction, the event is triggered when a finger is lifted from the touchscreen at the end of a tap.</dd>
@@ -936,4 +594,4 @@ All functions available by touch when the platform assistive technology is not t
   
 
 <section id="references" class="appendix" typeof="bibo:Chapter" resource="#references" property="bibo:hasPart"><!--OddPage--><h2 id="h-references" resource="#h-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">C. </span>References</span></h2><section id="informative-references" typeof="bibo:Chapter" resource="#informative-references" property="bibo:hasPart"><h3 id="h-informative-references" resource="#h-informative-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.1 </span>Informative references</span></h3><dl class="bibliography" resource=""><dt id="bib-WCAG20">[WCAG20]</dt><dd>Ben Caldwell; Michael Cooper; Loretta Guarino Reid; Gregg Vanderheiden et al. W3C. <a href="http://www.w3.org/TR/WCAG20/" property="dc:references"><cite>Web Content Accessibility Guidelines (WCAG) 2.0</cite></a>. 11 December 2008. W3C Recommendation. URL: <a href="http://www.w3.org/TR/WCAG20/" property="dc:references">http://www.w3.org/TR/WCAG20/</a>
-</dd></dl></section></section><p role="navigation" id="back-to-top"><a href="file:///C:/Users/jeanne-w3c/Downloads/index.html#toc"><abbr title="Back to Top">↑</abbr></a></p><script async="" defer="" src="./touch_files/fixup.js"></script></body></html>
+</dd></dl></section></section><p role="navigation" id="back-to-top"><a href="#toc"><abbr title="Back to Top">↑</abbr></a></p><script async="" defer="" src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
