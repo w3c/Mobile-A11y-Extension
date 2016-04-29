@@ -284,10 +284,10 @@
     <h3 id="touch-and-pointer"> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </h3>
     <section class="understanding introductory">
     <h4>Intent of Guideline 2.5</h4>
-    <p><span class="proposed">[Proposed text for Understanding] </span>Some devices such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  Other devices can be operated by a number of different devices, such as a pen, stylus, or mouse, which may be generically referred to as a <a href="#def-pointer">pointer</a>. This section also applies to pointer events on non-mobile platforms.</p>
+    <p><span class="proposed">[Proposed text for Understanding] </span>Platforms today can be operated through a number of different devices including touch, stylus, pen, in addition to mouse and keyboard. Some platforms such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  Other devices can be operated by a number of different devices, such as a pen, stylus, or mouse, which may be generically referred to as a <a href="#def-pointer">pointer</a>. This section also applies to pointer events on non-mobile platforms.</p>
     <p>
-Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). Pointer devices such as stylus, pen or pencil have also gained popularity for providing more precise touch. The mouse has been popular on desktop computers for decades. </p>
-    <p>Except where specifically noted, touch is assumed to also include pointer devices. </p>
+Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). Pointer devices such as stylus, pen or pencil have also gained popularity for providing more precise touch. The mouse has been popular on desktop computers for decades.    </p>
+    <p> Although the definition of &quot;pointer&quot; includes touch, we include touch and pointer for clarity.  When we use the term touch, we just mean touch. </p>
     </section>
     <section class="sc">
     <h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Touch with Assistive Technology: All functions available by touch are still available by touch after platform assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
@@ -363,8 +363,8 @@ All functions available by touch when the platform assistive technology is not t
 </section>   
 </section>
 <section class="sc">
-  <h4 id="independent-activation"><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Independent Activation: </h4>
-  <h4><span>For single touch and/or pointer activation, at least one of the following is true</span>: (Level A)
+  <h4 id="independent-activation"><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Accidental Activation: </h4>
+  <h4><span>For single touch and pointer activation, at least one of the following is true</span>: (Level A)
     <section class="understanding">
     </section>
   </h4>
@@ -373,20 +373,21 @@ All functions available by touch when the platform assistive technology is not t
       <li>Activation is on the <u><a href="https://www.w3.org/WAI/GL/mobile-a11y-tf/wiki/Proposed_revision_of_2.5.3#up-event">up-event</a></u>, either explicitly or implicitly as a platform's generic activation/click event; </li>
       <li>A mechanism is available that allows the user to choose the up-event as an option; </li>
       <li>Confirmation is provided, which can dismiss activation; </li>
-      <li>Activation is reversible; </li>
+      <li>Activation is reversible; or</li>
       <li>Timing of activation is essential and waiting for the up-event would invalidate the activity. </li>
     </ol>
   </h4>
-  <p>&nbsp;</p>
+  <p><strong>Note:</strong> This success criteria applies when platform assistive technology (e.g. screen reader) that remaps touch gestures is not turned on.</p>
   <section class="understanding">
   <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
-  <p>People with various disabilities can inadvertently initiate touch or   mouse events with unwanted results. Up-Event activation refers to the   activation of a component when the trigger stimulus is released.   For example, for touchscreen interaction the event would be triggered   when a finger is lifted from the touchscreen at the end of a tap.There   is a distinction between when someone touches a screen and when they   remove their finger. On a mouse there is a difference between mouse down   (initiating a click) and mouse up (releasing the finger).    Authors can reduce the problem of users inadvertently triggering an   action, by making activation on the up-event. This gives users the   opportunity to move their finger (or mouse/pointer),  away from the   wrong target once they hit it. If touch down activation is necessary,   there are several options: </p>
+  <p>People with various disabilities can inadvertently initiate touch or mouse events with unwanted results. Up-Event activation refers to the activation of a component when the trigger stimulus is released. For example, for touchscreen interaction the event would be triggered when a finger is lifted from the touchscreen at the end of a tap.There is a distinction between when someone touches a screen and when they remove their finger. On a mouse there is a difference between mouse down (initiating a click) and mouse up (releasing the finger). Authors can reduce the problem of users inadvertently triggering an action, by making activation on the up-event. This gives users the opportunity to move their finger (or mouse/pointer), away from the wrong target once they hit it. If touch down activation is necessary, there are several options:</p>
   <ul>
     <li> A confirmation alert allows the user to change their mind </li>
     <li> An undo button or other mechanism allows the user to reverse the action. </li>
     <li> A setting in preferences allows the user to choose whether activation happens on the down or up event. </li>
   </ul>
-  <p>Generic platform activation/click events generally trigger on up and   when they do, they are also allowed. For example, in the case of mouse   interactions, the "click" event in JavaScript triggers on release of the   primary mouse button, and is an example of an implicit up-event.   An exception would be an activity that would be invalid if activation   waited for the up-event. Examples of this could include a piano program   or a program for shooting skeets where waiting for the "up" event would   invalidate the activation.  Long press activation and 3D touch can be used as long as one of the   above listed alternatives is present, and there is another conforming   way to provide the action performed by the control. </p>
+  <p>Generic platform activation/click events generally trigger on up and when they do, they are also allowed. For example, in the case of mouse interactions, the "click" event in JavaScript triggers on release of the primary mouse button, and is an example of an implicit up-event. An exception would be an activity that would be invalid if activation waited for the up-event. Examples of this could include a piano program or a program for shooting skeets where waiting for the "up" event would invalidate the activation. Long press activation and 3D touch can be used as long as one of the above listed alternatives is present, and there is another conforming way to provide the action performed by the control.</p>
+  <p>Anywhere where we say &quot;touch and pointer&quot; we recognized that touch is included in the definition of pointer, but we include touch for clarity and ease of reading. </p>
   <p>On different platforms the "up-event" may be called different things, such as "touchend", &quot;onclick&quot; or "mouseup" etc..</p>
   <h5 class="benefit">Specific Benefits of Success Criterion 2.5.3</h5>
   <ul>
@@ -407,19 +408,28 @@ All functions available by touch when the platform assistive technology is not t
     <ul>
       <li><a rel="nofollow" href="https://www.w3.org/WAI/GL/mobile-a11y-tf/wiki/M029">M029</a> <span class="note">@@wiki link@@</span> Touch events are only triggered when touch is removed from a control</li>
       <li><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/FM001">FM001</a> Failure of SC 2.5.3 due to activating a button on initial touch location rather than the final touch location</li>
-      <li>Failure: Actions are only available through long press or 3D touch</li>
+      <li>Failure @@to be written@@: Actions are only available through long press or 3D touch</li>
     </ul>
   </section>
 </section>
 <section class="sc">    
-  <h4 id="touch_target_size"><span class="proposed">[Proposed New MOBILE Success Criteria]</span> Touch Target Size:   A <a href="#def-touch-target">touch target</a> is at least 44px x 44px of the visible display at the default viewport size. (Level AA) 
+  <h4 id="touch_target_size"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Target Size: The size of the <a href="#def-target">target</a> in relation to the visible display at the default viewport size is at least: (Level AA) 
+<ul>
+<li>44px by 44px for touch inputs</li>
+<li>20px by 20px for mouse/pointer inputs</li>
+</ul>
+  where px is a CSS <a href="#def-pixel">pixel</a>. </h4>
+<p>Note: In situations where both touch and pointer/mouse input mechanisms are present, without manual or automatic input detection, controls must follow the larger minimum dimensions for touch input.</p>
+<p>Note: This success criteria applies when platform assistive technology (e.g. magnification) is not turned on.</p>
+<p>Editor's Note: We are researching the 20px value for mouse/pointer and 44px for touch. We are seeking research on this and outside input. We also have to define the difference between a touch event and a mouse event, particularly in html and responsive environments.</p>
+<p> </p>
     <section class="understanding">
     </section>
   </h4>
   <section class="understanding">
   <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> 
     Intent of this Success Criterion</h5>
-  <p>Touch screens are a primary method of user input on mobile devices.  User interface controls must be big enough to capture finger touch actions.  The minimum recommended touch target size is 44px by 44px, but a larger touch target is recommended to reduce the possibility of unintentional actions if any of the following are true:
+  <p>The intent of this success criteria is to help users who may have trouble activating a small target because of hand tremours, limited dexterity or other reasons. Mice, and pointing devices can be hard to use for these users, and a larger target will help them greatly in having positive outcomes on the web page. If the target is too small, it may be difficult to aim at the target. This can be further complicated on responsive sites that double as mobile content where the same input will be used with touch. A finger is larger than mouse pointer, and needs a larger target. Touch screens are a primary method of user input on mobile devices. User interface controls must be big enough to capture finger touch actions. The minimum recommended touch target size is 44px by 44px, but a larger touch target is recommended to reduce the possibility of unintentional actions. This is particularly, if any of the following are true:
   <ul>
   <li>the control is used frequently;
   <li>the result of the touch cannot be easily undone;
@@ -432,6 +442,7 @@ All functions available by touch when the platform assistive technology is not t
       <li>Users who find fine motor movements difficult        </li>
       <li>Users who access a device using one hand        </li>
       <li>Users with large fingers </li>
+      <li>Users who have low vision may better see the target</li>
     </ul>
     <h5 class="examples">Examples of Success Criterion 2.5.4</h5>
     <ul>
@@ -649,11 +660,13 @@ All functions available by touch when the platform assistive technology is not t
   <dd>Moving or controlling the device with hands, body or machine. Device manipulation includes other methods of controling input to the mobile device outside of using the touch screen. This includes: pressing a physical button on the device, shaking, holding,      proximity, touch, walking, angle of      holding, input via the accelerometer etc.
   Gestures to the camera and voice input to the microphone are addressed 
   separately. </dd>
+  <dt id="def-pixel"><dfn>pixel</dfn></dt>
+  <dd>A CSS pixel based on the ideal viewport device-width. [editor note: we need a better definition of CSS pixel]. 
 <dt id-"def-platform-assistive-technology"><dfn>platform assistive technology</dfn> </dt>
   <dd>Platform assistive technology is built into the operating system and is generally updated through OS updates. Examples include VoiceOver on iOS and TalkBack on Android. </dd>
   <dt><dfn>pointer</dfn></dt>
   <dd>A pointer is a hardware-agnostic representation of input devices that can target a specific coordinate (or set of coordinates) on a screen. [Pointer Events] https://www.w3.org/TR/pointerevents/#dfn-pointer</dd>
-  <dt id="def-touch-target"><dfn>touch target</dfn></dt>
+  <dt id="def-target"><dfn> target</dfn></dt>
   <dd>Region of the display that will accept a touch action. If a portion of a touch target is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.</dd>
   <dt><dfn>touchend</dfn></dt> 
   <dd>see "<a href="#def-up-event">up event</a>"</dd>
@@ -663,11 +676,41 @@ All functions available by touch when the platform assistive technology is not t
   </dl>
   </section>  
   <section class='appendix'>
-    <p>&nbsp;</p>
     <h2>Acknowledgements</h2>
     <p>
-      Thanks to active members of the Task Force</p>
+      Thanks to current members of the Task Force</p>
+    <p>Allan, Jim<br>
+      Avila, Jonathan<br>
+      Babinszki, Tom<br>
+      Brough, Matthew<br>
+      Cooper, Michael<br>
+      Fischer, Detlev<br>
+      Foliot, John<br>
+      Garrison, Alistair<br>
+      Johlic, Marc<br>
+      Kirkpatrick, Andrew<br>
+      Lauke, Patrick<br>
+      MacDonald, David<br>
+      McMeeking, Chris<br>
+      Patch, Kimberly<br>
+      Pluke, Mike<br>
+      Richards, Jan<br>
+      Smith, Alan<br>
+      Spellman, Jeanne <br>
+      Vaishnav, Jatin<br>
+      Velleman, Eric<br>
+    Wahlbin, Kathleen</p>
       <p>Thanks to prior members of the Task Force</p>
+      <p>Anderson, Kathleen<br>
+        Evans, Gavin<br>
+        Kaja, Kiran<br>
+        LaHart, Andrew<br>
+        McGrane, Karen<br>
+        Shebanek, Mike<br>
+        Shiver, Brent<br>
+        Thiessen, Peter<br>
+        Wu, Wei<br>
+      Zehe, Marco</p>
   </section>
   </body>
 </html>
