@@ -222,15 +222,15 @@ table.simple {
   <p>
             <a class="logo" href="http://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
   </p>
-  <h1 class="title p-name" id="title" property="dcterms:title">Mobile Accessibility WCAG Extension</h1>
-  <h2 id="w3c-editor-s-draft-29-april-2016"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2016-04-29">29 April 2016</time></h2>
+  <h1 class="title p-name" id="title" property="dcterms:title">Touch and Pointer Accessibility</h1>
+  <h2 id="w3c-editor-s-draft-29-april-2016"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2016-04-29">2 May 2016</time></h2>
   <dl>
       <dt>This version:</dt>
       <dd><a class="u-url" href="http://w3c.github.io/Mobile-A11y-Extension/touch.html">http://w3c.github.io/Mobile-A11y-Extension/touch.html</a></dd>
       <dt>Latest published version:</dt>
       <dd>N/A</dd>
-      <dt>Latest editor's draft:</dt>
-      <dd><a href="http://w3c.github.io/Mobile-A11y-Extension/">http://w3c.github.io/Mobile-A11y-Extension/</a></dd>
+      <dt>Latest editor's draft (Github Repo):</dt>
+      <dd><a href="https://github.com/w3c/Mobile-A11y-Extension">https://github.com/w3c/Mobile-A11y-Extension</a></dd>
     <dt>Editors:</dt>
     <dd class="p-author h-card vcard" property="bibo:editor" resource="_:editor0"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">Michael Cooper</span></span>
 <span property="rdf:rest" resource="_:editor1"></span>
@@ -263,7 +263,7 @@ table.simple {
 </div>
     <section id="abstract" class="introductory" property="dc:abstract"><h2 id="h-abstract" resource="#h-abstract"><span property="xhv:role" resource="xhv:heading">Abstract</span></h2>
       <p>
-        The Mobile Accessibility Extension to WCAG 2.0 provides new guidelines, success criteria, and mobile Techniques that are an addition to Web Content Accessibility Guidelines (WCAG) 2.0. This Touch and Pointer Guideline is a subset of the Mobile Accessibility Extension, composed of only the Touch and Pointer Guideline, its success criteria and Understanding document entries. This extension does not replace WCAG 2.0. </p>
+        The Touch and Pointer Guideline provides new success criteria, techniques and failures that are an addition to Web Content Accessibility Guidelines (WCAG) 2.0. This  does not replace WCAG 2.0. </p>
     </section><section id="sotd" class="introductory"><h2 id="h-sotd" resource="#h-sotd"><span property="xhv:role" resource="xhv:heading">Status of This Document</span></h2>
         <p>
           <em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at http://www.w3.org/TR/.</em>
@@ -272,7 +272,7 @@ table.simple {
     <h2 id="status">Status</h2>
       <p><strong>This document is the internal working draft used by the Mobile Accessibility Task Force and is updated continuously and without notice. This is a draft document and may be updated, replaced or   obsoleted by other documents at any time. It is inappropriate to cite   this document as other than work in progress.</strong>
       </p>
-      <p>This is a draft of the Touch and Pointer Guideline of what may become the First Public Working Draft (FPWD) of the WCAG Extension on Mobile Accessibility. This document catalogs new mobile guideline on Touch and Pointer, its success criteria, Understanding entries, and Techniques proposed by the Mobile A11y Task Force of the WCAG Working Group. The full <a href="https://w3c.github.io/Mobile-A11y-Extension/">Editor's Draft of the WCAG Extension on Mobile Accessibility</a> is available for those who wish an overview of the Mobile Accessibility Task Force plans for the full Extension. </p>
+      <p>This is a draft of the Touch and Pointer Guideline which catalogs a new mobile guideline on Touch and Pointer, its success criteria, Understanding entries, and Techniques proposed by the Mobile A11y Task Force of the WCAG Working Group. </p>
       <p>When complete, this document is intended to become a normative extension of <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guideline (WCAG 2.0)</a> [<cite><a class="bibref" href="#bib-WCAG20">WCAG20</a></cite>] and is part of a series of technical and educational documents published by the <a href="http://www.w3.org/WAI/"><abbr title="World Wide Web Consortium">W3C</abbr> Web Accessibility Initiative (WAI)</a>. </p>
       <p>The Mobile Accessibility Task Force would particularly appreciate feedback on: </p>
       <ol>
@@ -316,7 +316,7 @@ table.simple {
   <ul class="toc">
   </ul>
 </li>
-  <li class="tocline"><ul class="toc"><li class="tocline"><a href="#touch-and-pointer" class="tocxref"><span class="secno">2.5 </span> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </a><ul class="toc">
+  <li class="tocline"><ul class="toc"><li class="tocline"><a href="#touch-and-pointer" class="tocxref">Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </a><ul class="toc">
     <a href="#glossary" class="tocxref"><span class="secno">A. </span>Glossary</a>
   </ul>
   </li></ul></li>
@@ -333,14 +333,14 @@ table.simple {
     
     <section class="introductory" typeof="bibo:Chapter" resource="#intro" property="bibo:hasPart">
       <h2 id="intro" resource="#intro"><span property="xhv:role" resource="xhv:heading">Introduction</span></h2>
-      <p>The Mobile Accessibility Extension to WCAG 2.0 provides guidance to improve accessibility for people with disabilities. While it generally applies to traditional mobile devices, it also applies to touch-enabled desktop devices, kiosks, tablets and other platforms that use technology beyond the traditional mouse and keyboard. While it is primarily oriented toward web and hybrid content, the guidelines and success criteria may also apply to native mobile applications. </p>
+      <p>The document provides guidance to improve accessibility for people with disabilities. While it generally applies to traditional mobile devices, it also applies to touch-enabled desktop devices, kiosks, tablets and other platforms that use technology beyond the traditional mouse and keyboard. While it is primarily oriented toward web and hybrid content, the guidelines and success criteria may also apply to native mobile applications. </p>
       <h3 id="structure-of-this-document">Structure of this Document</h3>
-      <p>This version of the Mobile Accessibility Extension to WCAG is closely tied with WCAG. The early work of the task force focused on writing Techniques for WCAG that applied to mobile. Many existing WCAG techniques apply to mobile in current form and are listed in the Appendix of the <abbr title="World Wide Web Consortium">W3C</abbr> Working Group Note: <a href="https://www.w3.org/TR/mobile-accessibility-mapping/#wcag-techniques-that-apply-to-mobile">Mobile Accessibility: How WCAG 2.0 and Other <abbr title="World Wide Web Consortium">W3C</abbr>/WAI Guidelines Apply to Mobile</a>.      </p>
-      <p>New guidelines and success criteria that are not in WCAG 2.0  are marked as <strong>[MOBILE]</strong>. For convenience of discussion, the proposed Touch and Pointer Guideline has been tentatively numbered as 2.5, since the Task Force proposes it belongs with WCAG Principle 2: Operable. </p>
+      <p>This version of the Touch and Pointer Accessibility Guideline is closely tied with WCAG. The early work of the task force focused on writing Techniques for WCAG that applied to mobile. Many existing WCAG techniques apply to mobile in current form and are listed in the Appendix of the <abbr title="World Wide Web Consortium">W3C</abbr> Working Group Note: <a href="https://www.w3.org/TR/mobile-accessibility-mapping/#wcag-techniques-that-apply-to-mobile">Mobile Accessibility: How WCAG 2.0 and Other <abbr title="World Wide Web Consortium">W3C</abbr>/WAI Guidelines Apply to Mobile</a>.      </p>
+      <p>This new guideline,  success criteria, and techniques  are not in WCAG 2.0. It is being determined by the WCAG Working Group how this will be incorporated into WCAG 2.0. For convenience of discussion, the proposed Touch and Pointer Guideline has been tentatively numbered as 2.5, since the Task Force proposes it belongs with WCAG Principle 2: Operable. </p>
     </section>
     
     <section class="principle" typeof="bibo:Chapter" resource="#perceivable" property="bibo:hasPart">
-      <!--OddPage--><h2 class="principle" id="perceivable" resource="#perceivable"><span property="xhv:role" resource="xhv:heading"><span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </span></h2>
+      <!--OddPage--><h2 class="principle" id="perceivable" resource="#perceivable"><span property="xhv:role" resource="xhv:heading">Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </span></h2>
   </section>
   <section class="principle" typeof="bibo:Chapter" resource="#operable" property="bibo:hasPart">
     <section class="guideline" typeof="bibo:Chapter" resource="#touch-and-pointer" property="bibo:hasPart">
