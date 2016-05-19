@@ -598,12 +598,39 @@ All functions available by touch when the platform assistive technology is not t
  <section class="guideline">
     <h3> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.4 Make content usable in  device orientations.[MOBILE] </h3>
 
-  <h4>3.4.1 Expose Orientation: Changes in   orientation are programmatically exposed to ensure  assistive technology   such as screen readers know the changes in layout. [MOBILE]</h4>
-</section>
+  <h4>3.4.1  Orientation: Orientation of the content is not locked to landscape or portrait, except where orientation is <a href="https://www.w3.org/TR/WCAG20/#essentialdef">essential</a>. </h4>
+  <h5><span id="Understanding_Orientation">[Proposed text for Understanding] Intent of this Success Criterion</span></h5>
+  <p>Some mobile applications automatically set the screen to a particular display orientation (landscape or portrait) and expect that users will respond by rotating the mobile device to match. However, some users have their mobile devices mounted in a fixed orientation (e.g. on the arm of a power wheelchair).</p>
+  <p>Therefore, mobile application developers should try to support both orientations.</p>
+  <h5><span id="Benefits_of_Orientation">Specific Benefits of Success Criterion 3.4.1</span></h5>
+  <ul>
+    <li>Users with dexterity impairments, who have a mounted mobile device will be able to use the content in their fixed orientation</li>
+  </ul>
+  <h5><span id="Problems_Orientation">Examples of problems</span></h5>
+  <ul>
+    <li>banking website locked in portrait mode</li>
+    <li>iOS home screen on the iPHone vs. iPad</li>
+  </ul>
+  <h5><span id="Examples_of_essential_orientation">Examples of essential</span></h5>
+  <ul>
+    <li>banking site where a check deposit has to be in a certain orientation</li>
+    <li>piano app in landscape mode</li>
+  </ul>
+  <p><br>
+  </p>
+  <h5><span id="Related_Resources_Orientation">Related Resources</span></h5>
+  <p>Resources are for information purposes only, no endorsement implied.</p>
+  <p>(none currently documented)</p>
+  <h5><span id="Techniques_and_Failures_for_Orientation">Techniques and Failures for Success Criterion 3.4.1</span></h5>
+  <ul>
+    <li>Failure: locking the orientation</li>
+    <li>Technique: Using CSS to set the orientation to allow both landscape and portrait.</li>
+  </ul>
+  <p>&nbsp;</p>
+ </section>
 <section class="guidelines">
-    <h3><a id="distinguishable"> </a> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.5 Make interactive elements distinguishable  </h3>
-
-<h4>3.5.1 Triggers Distinguishable: Elements   that trigger changes should be sufficiently distinct to be clearly   distinguishable from non-actionable elements (content, status   information, etc). [MOBILE]</h4>
+    <h3><a id="distinguishable"> </a> <span class="proposed">[Proposed New MOBILE Guideline] </span> Guideline 3.5 Make interactive elements distinguishable</h3>
+    <h4>3.5.1 Triggers Distinguishable: Elements   that trigger changes should be sufficiently distinct to be clearly   distinguishable from non-actionable elements (content, status   information, etc). [MOBILE]</h4>
       <ul>
         <li>
           <div><a rel="nofollow" href="http://w3c.github.io/Mobile-A11y-TF-Note/Techniques/M004">M004</a>: Providing clear indication that elements are actionable / Design actionable objects to look actionable </div>
@@ -631,7 +658,7 @@ All functions available by touch when the platform assistive technology is not t
 </section>
     
 <section class="principle">
-      <h2 class="principle" id="robust">Principle 4: Robust - Content must be robust   enough that it can be interpreted reliably by a wide variety of user   agents, including assistive technologies.</h2>
+<h2 class="principle" id="robust">Principle 4: Robust - Content must be robust   enough that it can be interpreted reliably by a wide variety of user   agents, including assistive technologies.</h2>
       <div>
         <h3>Guideline 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.</h3>
       </div>
