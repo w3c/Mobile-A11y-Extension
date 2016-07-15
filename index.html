@@ -293,18 +293,19 @@ Mobile device design has evolved away from built-in physical keyboards (e.g. fix
     <h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Touch with Assistive Technology: All functions available by touch are still available by touch after platform assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
     <section class="understanding">
       <h5><span class="proposed">[Proposed text for Understanding] </span> Intent of this Success Criterion</h5>
-      <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with platform assistive technology.  
-Some assistive technology such as a screen reader will change the gestures that are used to interact with content when it is turned on.   For example, on both iOS and Android platforms a a single swipe on the touch screen will activate the element that currently has focus.  When the system screen reader is turned on, a single tap will move focus to that element and a double tap will activate the element.
-All functions available by touch when the platform assistive technology is not turned on must be still available when the platform assistive technology is turned on.</p>
+      <p>The intent of this Success Criterion is to ensure that content can be operated using gestures on a touch screen with platform assistive technology.</p>
+<p>Generally, assistive technology such as a screen reader on a touch screen device will change the gestures that are used to interact with content when it is turned on.<p>
+<p>For example, on both iOS and Android platforms, when the platform's screen reader (VoiceOver and TalkBack, respectively) is enabled, users will move their focus to the previous/next element using single swipe left/right gestures; using "touch to explore" functionality, a single tap on the touch screen will set focus to the element at that particular location on the screen; a double tap will activate the element.</p>
+<p>While content may provide its own gesture-based controls, all functions available by touch when the platform assistive technology is not turned on must be still available when the platform assistive technology is turned on.</p>
       <p>Be famililar with your platform's system controls and standards for assistive technology. Use the system controls supported by the platform first and don't overwrite the standard gestures of the platform. Don't use a common gesture for a purpose that is not common. </p>
       <h5>Specific Benefits of Success Criterion 2.5.1</h5>
       <ul>
         <li>People who are blind who rely on the use of a screen reader while interacting with the touch screen</li>    
-        <li>People  	with low vision who may also need speech turned on while interacting  	with the touch screen</li>
+        <li>People with low vision who may also need speech turned on while interacting  	with the touch screen</li>
       </ul>
    <h5>Examples of Success Criterion 2.5.1</h5>
    	  <ul>
-         <li>If a developer assigns a double tap as a custom gesture, as the only way to complete an action, a user who is blind using VoiceOver will not have access to that action because VoiceOver reserves the double tap to select an item. </li>
+         <li>If a developer assigns a double tap as a custom gesture, as the only way to complete an action, a user who is blind using VoiceOver will not have access to that action because VoiceOver reserves the double tap to activate an item.</li>
          <li>If a developer assigns a swipe right as the only way to open a menu, the VoiceOver user will not be able to do that action, because VoiceOver takes over the right swipe as a way to move from element to element. To avoid this problem, the developer could ensure there is a mobile menu button that works with touch as another way to bring up the menu.</li>
    	  </ul>
    <h5>Related Resources</h5>
