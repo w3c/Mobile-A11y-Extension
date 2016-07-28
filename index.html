@@ -280,10 +280,10 @@
     <h3 id="touch-and-pointer"> <span class="proposed">[Proposed New MOBILE Guideline] </span>Guideline 2.5: Touch and Pointer: Make it easier for users to operate touch and pointer functionality. </h3>
     <section class="understanding introductory">
     <h4>Intent of Guideline 2.5</h4>
-    <p><span class="proposed">[Proposed text for Understanding] </span>Platforms today can be operated through a number of different devices including touch, stylus, pen, in addition to mouse and keyboard. Some platforms such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  Other devices can be operated by a number of different devices, such as a pen, stylus, or mouse, which may be generically referred to as a <a href="#def-pointer">pointer</a>. This section also applies to pointer events on non-mobile platforms.</p>
+    <p><span class="proposed">[Proposed text for Understanding] </span>Platforms today can be operated through a number of different devices including touch, stylus, pen, in addition to mouse and keyboard. Some platforms such as a mobile device are designed to be primarily operated via gestures made on a touchscreen.  Other devices can be operated by a number of different devices, such as a pen, stylus, or mouse, which may be generically referred to as <a href="#def-pointer-input">pointer inputs</a>. This section also applies to pointer events on non-mobile platforms.</p>
     <p>
 Mobile device design has evolved away from built-in physical keyboards (e.g. fixed, slide-out) towards devices that maximize touchscreen area and display an on-screen keyboard only when the user has selected a user interface control that accepts text input (e.g. a textbox). Pointer devices such as stylus, pen or pencil have also gained popularity for providing more precise touch. The mouse has been popular on desktop computers for decades.    </p>
-    <p> Although the definition of &quot;pointer&quot; includes touch, we include touch and pointer for clarity.  When we use the term touch, we just mean touch. </p>
+    <p> Although the definition of &quot;pointer inputs&quot; includes touch, we include touch and pointer for clarity.  When we use the term touch, we just mean touch. </p>
     </section>
     <section class="sc">
     <h4 id="sc-touch-with-AT" class="sc"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Touch with Assistive Technology: All functions available by touch are still available by touch after platform assistive technology that remaps touch gestures is turned on.  (Level A)</h4>
@@ -412,33 +412,37 @@ Mobile device design has evolved away from built-in physical keyboards (e.g. fix
 <section class="sc">    
   <h4 id="touch_target_size"><span class="proposed">[Proposed New MOBILE Success Criteria]</span>  Target Size: The size of the <a href="#def-target">target</a> in relation to the visible display at the default viewport size is at least: (Level AA) 
 <ul>
-<li>44px by 44px for touch inputs</li>
-<li>20px by 20px for mouse/pointer inputs</li>
+<li>44px by 44px for pointer inputs with coarse pointing accuracy (such as a touchscreen)</li>
+<li>20px by 20px for pointer inputs with fine pointing accuracy (such as a mouse, trackpad or stylus)</li>
 </ul>
   where px is a CSS <a href="#def-pixel">pixel</a>. </h4>
-<p>Note: In situations where both touch and pointer/mouse input mechanisms are present, without manual or automatic input detection, controls must follow the larger minimum dimensions for touch input.</p>
-<p>Note: This success criteria applies when platform assistive technology (e.g. magnification) is not turned on.</p>
+<p>Note: In situations where multiple input mechanisms with both coarse and fine pointing accuracy are present, and where no mechanisms are present to determine the user's current input (either manual - e.g. providing the user with an explicit toggle to switch to a "touch-optimized" interface - or automatic - e.g. an application switching dynamically based on the type of input the user is currently using), targets must follow the larger minimum dimensions for coarse pointer inputs.</p>
+<p>Note: This success criterion applies when platform assistive technology (e.g. magnification) is not turned on.</p>
 <p>Editor's Note: We are researching the 20px value for mouse/pointer and 44px for touch. We are seeking research on this and outside input. We also have to define the difference between a touch event and a mouse event, particularly in html and responsive environments.</p>
-<p> </p>
+<p>Editor's Note: this criterion borrows the distinction of "coarse" and "fine" pointing devices from <a href="https://www.w3.org/TR/mediaqueries-4/#descdef-media-pointer">Media Queries Level 4 - Pointing Device Quality: the pointer feature</a></p>
     <section class="understanding">
     </section>
   </h4>
   <section class="understanding">
   <h5 class="intent"><span class="proposed">[Proposed text for Understanding] </span> 
     Intent of this Success Criterion</h5>
-  <p>The intent of this success criteria is to help users who may have trouble activating a small target because of hand tremours, limited dexterity or other reasons. Mice, and pointing devices can be hard to use for these users, and a larger target will help them greatly in having positive outcomes on the web page. If the target is too small, it may be difficult to aim at the target. This can be further complicated on responsive sites that double as mobile content where the same input will be used with touch. A finger is larger than mouse pointer, and needs a larger target. Touch screens are a primary method of user input on mobile devices. User interface controls must be big enough to capture finger touch actions. The minimum recommended touch target size is 44px by 44px, but a larger touch target is recommended to reduce the possibility of unintentional actions. This is particularly, if any of the following are true:
+  <p>The intent of this success criterion is to help users who may have trouble activating a small target because of hand tremors, limited dexterity or other reasons. If the target is too small, it may be difficult to aim at the target. Mice and similar pointing devices can be hard to use for these users, and a larger target will help them greatly in having positive outcomes on the web page.</p>
+  <p>Touch is particularly problematic as it is an input mechanism with coarse precision. Users lack the same level of fine control as on inputs such as a mouse or stylus. A finger is larger than a mouse pointer, and generally obstructs the user's view of the precise location on the screen that is being touched/activated.</p>p>
+  <p>The issue can be further complicated on for responsive/mobile which need to accommodate different types of fine and coarse inputs (e.g. a site that can be accessed both on a traditional desktop/laptop with a mouse, as well as on a tablet or mobile phone with a touch screen).</p>
+  <p>While this criterion defines a minimum target size, even large sizes are recommended to reduce the possibility of unintentional actions. This is particularly relevant if any of the following are true:</p>
   <ul>
-  <li>the control is used frequently;
-  <li>the result of the touch cannot be easily undone;
-  <li>the control is positioned where it will be difficult to reach, or is near the edge of the screen;   
-  <li> the control is part of a sequential task.
+  <li>the control is used frequently;</li>
+  <li>the result of the interaction cannot be easily undone;</li>
+  <li>the control is positioned where it will be difficult to reach, or is near the edge of the screen;</li>
+  <li>the control is part of a sequential task.</li>
+  </ul>
     
     <h5 class="benefit">Specific Benefits of Success Criterion 2.5.4</h5>
     <ul>
       <li>Users with mobility impairments, such as hand tremors</li>
-      <li>Users who find fine motor movements difficult        </li>
-      <li>Users who access a device using one hand        </li>
-      <li>Users with large fingers </li>
+      <li>Users who find fine motor movements difficult</li>
+      <li>Users who access a device using one hand</li>
+      <li>Users with large fingers, or who are operating the device with only a part of their finger or knuckle</li>
       <li>Users who have low vision may better see the target</li>
     </ul>
     <h5 class="examples">Examples of Success Criterion 2.5.4</h5>
@@ -661,8 +665,8 @@ Mobile device design has evolved away from built-in physical keyboards (e.g. fix
   <dd>A CSS pixel based on the ideal viewport device-width. [editor note: we need a better definition of CSS pixel]. 
 <dt id-"def-platform-assistive-technology"><dfn>platform assistive technology</dfn> </dt>
   <dd>Platform assistive technology is built into the operating system and is generally updated through OS updates. Examples include VoiceOver on iOS and TalkBack on Android. </dd>
-  <dt><dfn>pointer</dfn></dt>
-  <dd>A pointer is a hardware-agnostic representation of input devices that can target a specific coordinate (or set of coordinates) on a screen. [Pointer Events] https://www.w3.org/TR/pointerevents/#dfn-pointer</dd>
+  <dt><dfn>pointer input</dfn></dt>
+  <dd>generic term for an input device (such as a mouse, stylus, or touchscreen) that can target a specific coordinate (or set of coordinates) on a screen. See also [Pointer Events] https://www.w3.org/TR/pointerevents/#dfn-pointer</dd>
   <dt id="def-target"><dfn> target</dfn></dt>
   <dd>Region of the display that will accept a touch action. If a portion of a touch target is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.</dd>
   <dt><dfn>touchend</dfn></dt> 
